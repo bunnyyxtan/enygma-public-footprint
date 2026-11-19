@@ -92,3 +92,30 @@ A change to how H4 cuts the transaction input into 32 byte words. It was found w
 - Event signature hashes (topic 0 of a log) are now counted as public constants, alongside small numbers and emitting contract addresses. They are the same for every user of the contract.
 - Nothing else changed. H1 to H3 and H5 are untouched. The tamper tests still pass, including the planted repeated tag.
 - With the change, T1 and T2 share no word outside public constants, before any baseline is applied. The scan output from before the change is kept in git history (commit with message "T0, S1, T1, T2 collected and scanned").
+
+### Amendment 3, 19 Nov 2026, after all trials
+
+Everything here was added or found after T6. None of it changes H1 to H5 or their results. The new checks are reported apart from H1 to H5 as post-hoc checks.
+
+What happened differently from the plan
+
+- T0 shielded 4.9775 USDr (the app's MAX of the 5 USDr faucet balance), not 5. The 0.25% fee was paid on top.
+- The shielded faucet was not used. A was funded by two private sends from my own other account (F1 and F2 in `trials.json`), at 09:14 and 09:16 UTC.
+- S2 is a shield of A's last 5.3153 public RLS, made in the app at 09:12 UTC. It was not in the plan. It is listed under setup.
+- The screen recording starts at S1. Account creation, the faucet, registration and T0 have screenshots only.
+- The trial times in `README.md` come from the block headers in `raw/`, not from my notes.
+
+Post-hoc checks added after the trials
+
+- P1. The explorer's other tabs (internal transactions, state changes, raw trace) are saved for every transaction and searched as text. The first run flagged the amount in T1 to T5. That was a false match, because 1000000000000000000 is a 1 and 18 zeros and appears inside long runs of zeros in hex data. Text values now have to stand alone. After the fix, T1 to T5 show nothing and both controls still show the address and amount.
+- P2. The two token contract addresses (USDr and RLS) are searched in every transaction. Neither appears in T1 to T5. Both controls show them. The USDr contract sits at 0x...0400, the same 20 bytes as the number 1024, so a USDr hit alone would not be proof.
+- The sender field (`from`) is now part of the scanned bytes. It is the relayer in every transaction.
+- H4 was also run with no baseline at all. It still found 0 repeated words, so the baseline sends did not hide anything.
+- The vault ID in the logs is 2 for both USDr and RLS, so it does not tell which token moved.
+- F1 and F2 each spend two notes. Their payment call is 3520 bytes instead of 3424, which makes the whole input 7396 bytes instead of 7300. This comes from two setup sends, not from the trials.
+
+Evidence handling
+
+- `footprint.py recheck` fetches every hash again and compares it with the saved copy. The public RPC stops serving receipts for older blocks (X1 to X3 already return none), so recheck then takes status and logs from the explorer and says so.
+- Timing of the preregistration. GitHub Actions run 44486567904 was triggered by the first push at 08:19:02 UTC. Account A's first transaction is at 08:26:04 UTC by block time. Git commit dates come from my local clock, the Actions run time does not.
+- Explorer screenshots in `media/explorer/` were taken with sponsored banners hidden by a page script. Nothing else on the page was changed.

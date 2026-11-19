@@ -27,5 +27,9 @@
    "registration_tx": "0xd5bcaa20f725c1fec326806e1beabb1fe22957072bcec0d17a2eb311a7eb2d36",
    "registration_block": 24085128
   }
+ },
+ "tokens": {
+  "USDr": "0x0000000000000000000000000000000000000400",
+  "RLS": "0x07e17E17E17E17E17E17E17E17E17E17E17E17EA"
  }
 }

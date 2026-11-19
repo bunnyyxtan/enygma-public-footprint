@@ -3,6 +3,7 @@
   python scripts/footprint.py collect  [--trials trials.json]   fetch raw RPC + explorer data into raw/
   python scripts/footprint.py keys                              fill public keys in needles.json from the registry
   python scripts/footprint.py verify   [--trials trials.json]   integrity checks on raw/ (no network)
+  python scripts/footprint.py recheck                           fetch every hash again from the live RPC and compare
   python scripts/footprint.py scan     [--trials trials.json]   H1 to H4, writes results/
   python scripts/footprint.py manifest                          write MANIFEST.sha256
   python scripts/footprint.py check-manifest                    confirm files match MANIFEST.sha256
@@ -11,6 +12,7 @@ Exit code is non-zero when a check fails, so CI fails loudly.
 """
 import hashlib
 import json
+import re
 import sys
 import time
 import urllib.request
@@ -50,7 +52,7 @@ def collect(trials, raw_dir):
     Path(raw_dir).mkdir(exist_ok=True)
     chain = int(rpc("eth_chainId", []), 16)
     assert chain == CHAIN_ID, f"wrong chain {chain}"
-    for t in trials["trials"] + trials.get("baseline", []):
+    for t in trials["trials"] + trials.get("baseline", []) + trials.get("setup", []):
         h = t["hash"]
         tx = rpc("eth_getTransactionByHash", [h])
         receipt = rpc("eth_getTransactionReceipt", [h])
@@ -62,6 +64,12 @@ def collect(trials, raw_dir):
         raw_path(t["id"], "rpc", raw_dir).write_text(json.dumps(
             {"retrieved_utc": stamp, "endpoint": RPC, "chain_id": chain, "tx": tx, "receipt": receipt, "block": block}, indent=1))
         exp = {"tx": http_json(f"{EXPLORER}/transactions/{h}"), "logs": http_json(f"{EXPLORER}/transactions/{h}/logs")}
+        # The other explorer tabs a stranger can open: internal txns, state changes, raw trace.
+        for key, ep in (("internal", "internal-transactions"), ("state", "state-changes"), ("trace", "raw-trace")):
+            try:
+                exp[key] = http_json(f"{EXPLORER}/transactions/{h}/{ep}")
+            except Exception as err:  # an empty or missing tab is recorded, not hidden
+                exp[key] = {"error": str(err)}
         exp["retrieved_utc"] = stamp
         raw_path(t["id"], "explorer", raw_dir).write_text(json.dumps(exp, indent=1))
         print(f"{t['id']}: block {int(tx['blockNumber'], 16)} saved")
@@ -134,7 +142,7 @@ def verify_trial(tid, h, raw_dir):
 
 def verify(trials, raw_dir):
     bad = 0
-    for t in trials["trials"] + trials.get("baseline", []):
+    for t in trials["trials"] + trials.get("baseline", []) + trials.get("setup", []):
         probs = verify_trial(t["id"], t["hash"], raw_dir)
         print(f"{t['id']}: {'PASS' if not probs else 'FAIL ' + '; '.join(probs)}")
         bad += bool(probs)
@@ -149,9 +157,9 @@ def hexbytes(s):
 
 
 def tx_blobs(r):
-    """Every byte string an explorer viewer can see, except the relayer sender field."""
+    """Every byte string an explorer viewer can see in the transaction and its logs, sender field included."""
     tx, rc = r["tx"], r["receipt"]
-    blobs = [("input", hexbytes(tx["input"])), ("to", hexbytes(tx["to"] or "0x"))]
+    blobs = [("input", hexbytes(tx["input"])), ("to", hexbytes(tx["to"] or "0x")), ("from", hexbytes(tx["from"]))]
     for i, l in enumerate(rc["logs"]):
         blobs.append((f"log{i}.address", hexbytes(l["address"])))
         for j, t in enumerate(l["topics"]):
@@ -284,23 +292,88 @@ def scan(trials, needles, raw_dir, out_dir):
     for w, ids in repeated.items():
         failures.append(f"H4 word {w} repeats in {ids} and is in no baseline send")
 
+    posthoc = posthoc_checks(trials, needles, acct_forms, raw_dir, tests)
+
     summary = {"generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "trials": res,
                "shape_reference": ref, "shape_differences": shape_diff,
                "h4_baseline_sends": [b["id"] for b in trials.get("baseline", [])],
                "h4_repeated_public_constants": constants,
-               "h4_repeated_words_not_in_baseline": repeated, "failures": failures}
+               "h4_repeated_words_not_in_baseline": repeated, "failures": failures,
+               "posthoc_amendment_3": posthoc}
     Path(out_dir, "scan.json").write_text(json.dumps(summary, indent=1))
     for tid, x in res.items():
         s = x["shape"]
         print(f"{tid:5} {x['role']:8} in={s['input_bytes']:5} logs={s['log_count']:2} gas={s['gas_used']:8} hits={sorted({h['value'] for h in x['hits']})}")
     print("H4 repeated words not in baseline:", len(repeated))
+    print("Post-hoc (amendment 3):", "; ".join(f"{k} {v['summary']}" for k, v in posthoc.items()))
     print("FAILURES" if failures else "ALL CHECKS PASSED", *failures, sep="\n  ")
     return len(failures)
 
 
+def posthoc_checks(trials, needles, acct_forms, raw_dir, tests):
+    """Checks added after the trials (amendment 3). Reported separately from H1 to H5."""
+    out = {}
+    # P1. The explorer's other tabs (internal txns, state changes, raw trace) searched as text.
+    p1 = {}
+    for t in trials["trials"]:
+        e = load(raw_path(t["id"], "explorer", raw_dir))
+        text = json.dumps({k: e.get(k) for k in ("internal", "state", "trace")}).lower()
+        forms = dict(acct_forms, **amount_forms(t["amount_wei"]))
+        # Text forms (username, ascii address, decimal amount) must stand alone: "1000000000000000000"
+        # is "1" plus 18 zeros and would otherwise match inside any long run of zeros in hex data.
+        def standalone(s):
+            return re.search(r"(?<![0-9a-z])" + re.escape(s) + r"(?![0-9a-z])", text) is not None
+        p1[t["id"]] = sorted(k for k, v in forms.items()
+                             if v.hex() in text or (k.endswith(("username", "ascii")) and standalone(v.decode(errors="ignore").lower())))
+    out["P1_other_explorer_tabs"] = {"hits": p1, "summary": "test sends with hits: " + str([k for k in tests if p1[k]])}
+    # P2. Token contract addresses, to see whether a send reveals which token moved.
+    p2 = {}
+    for t in trials["trials"]:
+        blobs = tx_blobs(load(raw_path(t["id"], "rpc", raw_dir)))
+        p2[t["id"]] = {name: sorted({w for w, b in blobs if hexbytes(addr) in b}) for name, addr in needles.get("tokens", {}).items()}
+    out["P2_token_addresses"] = {"hits": p2, "summary": "test sends with hits: " + str([k for k in tests if any(p2[k].values())]),
+                                 "note": "USDr sits at 0x...0400, the same 20 bytes as the number 1024, so a USDr hit can be a plain number"}
+    return out
+
+
+# ---------------------------------------------------------------- recheck (online)
+
+def recheck(trials, raw_dir):
+    """Fetch every hash again from the live RPC and compare it with the saved copy.
+    The offline checks only prove the saved files are consistent; this ties them back to the chain."""
+    bad = 0
+    for t in trials["trials"] + trials.get("baseline", []) + trials.get("setup", []):
+        saved = load(raw_path(t["id"], "rpc", raw_dir))
+        tx = rpc("eth_getTransactionByHash", [t["hash"]])
+        rc = rpc("eth_getTransactionReceipt", [t["hash"]])
+        blk = rpc("eth_getBlockByNumber", [tx["blockNumber"], False]) if tx else None
+        tx_same = (tx is not None and tx["input"] == saved["tx"]["input"] and tx["from"] == saved["tx"]["from"]
+                   and tx["blockHash"] == saved["tx"]["blockHash"] and blk["hash"] == saved["block"]["hash"])
+        saved_logs = [(l["address"].lower(), [x.lower() for x in l["topics"]], l["data"].lower()) for l in saved["receipt"]["logs"]]
+        if rc is not None:
+            source = "RPC"
+            rc_same = rc["status"] == saved["receipt"]["status"] and saved_logs == [
+                (l["address"].lower(), [x.lower() for x in l["topics"]], l["data"].lower()) for l in rc["logs"]]
+        else:
+            # The public RPC stops serving receipts for older blocks. Status and logs then come from the explorer.
+            source = "explorer (RPC no longer serves this receipt)"
+            et = http_json(f"{EXPLORER}/transactions/{t['hash']}")
+            el = http_json(f"{EXPLORER}/transactions/{t['hash']}/logs").get("items", [])
+            live = sorted((it["index"], it["address"]["hash"].lower(), [x.lower() for x in it.get("topics", []) if x],
+                           (it.get("data") or "0x").lower()) for it in el)
+            mine = sorted((int(l["logIndex"], 16), a, tp, d) for l, (a, tp, d) in zip(saved["receipt"]["logs"], saved_logs))
+            rc_same = (et.get("status") == "ok") == (saved["receipt"]["status"] == "0x1") and live == mine
+        same = tx_same and rc_same
+        print(f"{t['id']}: {'MATCHES CHAIN' if same else 'DIFFERS FROM CHAIN'} (tx and block from RPC, receipt from {source})")
+        bad += not same
+    print("recheck", "OK" if not bad else f"{bad} differ")
+    return bad
+
+
 # ---------------------------------------------------------------- manifest
 
-MANIFEST_GLOBS = ["PREREGISTRATION.md", "trials.json", "needles.json", "raw/*.json", "results/*.json", "scripts/*.py", "tests/*.py", "media/screens/*.jpg"]
+MANIFEST_GLOBS = ["PREREGISTRATION.md", "README.md", "trials.json", "needles.json", "raw/*.json", "results/*.json",
+                  "scripts/*.py", "tests/*.py", "media/screens/*.jpg", "media/explorer/*.png", "media/*.txt"]
 
 
 def write_manifest():
@@ -339,6 +412,8 @@ def main(argv):
         return 0
     if cmd == "verify":
         return verify(load(trials), raw_dir)
+    if cmd == "recheck":
+        return recheck(load(trials), raw_dir)
     if cmd == "scan":
         return scan(load(trials), load(ROOT / arg(argv, "--needles", "needles.json")), raw_dir, ROOT / arg(argv, "--out", "results"))
     if cmd == "manifest":

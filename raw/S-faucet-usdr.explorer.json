@@ -1,0 +1,340 @@
+{
+ "tx": {
+  "priority_fee": "0",
+  "raw_input": "0x",
+  "is_pending_update": false,
+  "result": "success",
+  "hash": "0xa0d444ea1d18c54eeab2ec298b910a5b1c435d0d22479e0d3deb3e3373d3f1ae",
+  "max_fee_per_gas": "57600000000",
+  "revert_reason": null,
+  "confirmation_duration": [
+   0,
+   556.0
+  ],
+  "transaction_burnt_fee": "1008000000000000",
+  "type": 2,
+  "token_transfers_overflow": false,
+  "confirmations": 8068,
+  "position": 0,
+  "max_priority_fee_per_gas": "0",
+  "transaction_tag": null,
+  "created_contract": null,
+  "value": "5000000000000000000",
+  "from": {
+   "ens_domain_name": null,
+   "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+   "implementations": [],
+   "is_contract": false,
+   "is_scam": false,
+   "is_verified": false,
+   "metadata": null,
+   "name": null,
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "gas_used": "21000",
+  "status": "ok",
+  "to": {
+   "ens_domain_name": null,
+   "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+   "implementations": [],
+   "is_contract": false,
+   "is_scam": false,
+   "is_verified": false,
+   "metadata": null,
+   "name": null,
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "authorization_list": [],
+  "method": null,
+  "fee": {
+   "type": "actual",
+   "value": "1008000000000000"
+  },
+  "gas_limit": "21000",
+  "gas_price": "48000000000",
+  "decoded_input": null,
+  "fhe_operations_count": 0,
+  "token_transfers": [
+   {
+    "block_hash": "0x0baf42741985a415ab6fd29e547531afcf8eb9c2e9de53932fc32172893a746c",
+    "block_number": 24502055,
+    "from": {
+     "ens_domain_name": null,
+     "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "log_index": 0,
+    "method": null,
+    "timestamp": null,
+    "to": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_type": "ERC-20",
+    "total": {
+     "decimals": "18",
+     "value": "5000000000000000000"
+    },
+    "transaction_hash": "0xa0d444ea1d18c54eeab2ec298b910a5b1c435d0d22479e0d3deb3e3373d3f1ae",
+    "type": "token_transfer"
+   }
+  ],
+  "base_fee_per_gas": "48000000000",
+  "timestamp": "2026-11-19T08:26:04.000000Z",
+  "nonce": 3786,
+  "historic_exchange_rate": null,
+  "transaction_types": [
+   "coin_transfer",
+   "token_transfer"
+  ],
+  "exchange_rate": null,
+  "block_number": 24502055,
+  "has_error_in_internal_transactions": null
+ },
+ "logs": {
+  "items": [
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x0000000000000000000000000000000000000400",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": "USD Rayls",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x0baf42741985a415ab6fd29e547531afcf8eb9c2e9de53932fc32172893a746c",
+    "block_number": 24502055,
+    "block_timestamp": "2026-11-19T08:26:04.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000004563918244f40000",
+    "decoded": {
+     "method_call": "Transfer(address indexed from, address indexed to, uint256 value)",
+     "method_id": "ddf252ad",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "5000000000000000000"
+      }
+     ]
+    },
+    "index": 0,
+    "smart_contract": null,
+    "topics": [
+     "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+     "0x000000000000000000000000a5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     null
+    ],
+    "transaction_hash": "0xa0d444ea1d18c54eeab2ec298b910a5b1c435d0d22479e0d3deb3e3373d3f1ae"
+   }
+  ],
+  "next_page_params": null
+ },
+ "internal": {
+  "items": [],
+  "next_page_params": null
+ },
+ "state": {
+  "items": [
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "balance_after": "4914906778943757823983",
+    "balance_before": "4919907786943757823983",
+    "change": "-5001008000000000000",
+    "is_miner": false,
+    "token": null,
+    "token_id": null,
+    "type": "coin"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "balance_after": "5000000000000000000",
+    "balance_before": "0",
+    "change": "5000000000000000000",
+    "is_miner": false,
+    "token": null,
+    "token_id": null,
+    "type": "coin"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "balance_after": "5000000000000000000",
+    "balance_before": "0",
+    "change": "5000000000000000000",
+    "is_miner": false,
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_id": null,
+    "type": "token"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "balance_after": "4915059598271757823983",
+    "balance_before": "4920059598271757823983",
+    "change": "-5000000000000000000",
+    "is_miner": false,
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_id": null,
+    "type": "token"
+   }
+  ],
+  "next_page_params": null
+ },
+ "trace": {
+  "from": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+  "gas": "0x5208",
+  "gasUsed": "0x5208",
+  "input": "0x",
+  "to": "0x7a1be2784a77f47fe52989dc8bc65df3b52babd1",
+  "type": "CALL",
+  "value": "0x4563918244f40000"
+ },
+ "retrieved_utc": "2026-11-19T09:40:15Z"
+}

@@ -46,8 +46,7 @@
    "expect_visible": [
     "A.address.raw",
     "amount.be_min"
-   ],
-   "time_utc": "2026-11-19 ~08:40"
+   ]
   },
   {
    "id": "T1",
@@ -119,5 +118,6 @@
    "note": "block 24433455, 70164 blocks before T1"
   }
  ],
- "baseline_rule_note": "Picked by the preregistered rule. The 3 relayer transactions closest to T1 to T5 with 7300 byte input and the same event list as T1, excluding every study and setup transaction. 301 relayer transactions were checked back to block 24433455. None qualified inside or after the trial window. Who sent them is not known, they were chosen only by the rule. They happen to be the same 3 used in the pilot, because they are the nearest ones."
+ "baseline_rule_note": "Picked by the preregistered rule. The 3 relayer transactions closest to T1 to T5 with 7300 byte input and the same event list as T1, excluding every study and setup transaction. 301 relayer transactions were checked back to block 24433455. None qualified inside or after the trial window. Who sent them is not known, they were chosen only by the rule. They happen to be the same 3 used in the pilot, because they are the nearest ones.",
+ "note_times": "Times are block times, see README.md. They are read from the block headers in raw/."
 }

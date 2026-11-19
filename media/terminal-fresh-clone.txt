@@ -1,0 +1,42 @@
+$ python scripts/footprint.py check-manifest
+manifest OK
+
+$ python scripts/footprint.py verify
+T0: PASS
+T1: PASS
+T2: PASS
+T3: PASS
+T4: PASS
+T5: PASS
+T6: PASS
+X1: PASS
+X2: PASS
+X3: PASS
+
+$ python scripts/footprint.py scan
+T0    control  in= 2340 logs= 8 gas=  981546 hits=['A.address.raw', 'A.spend', 'amount.be_min']
+T1    test     in= 7300 logs=10 gas= 2103973 hits=[]
+T2    test     in= 7300 logs=10 gas= 2103279 hits=[]
+T3    test     in= 7300 logs=10 gas= 2193660 hits=[]
+T4    test     in= 7300 logs=10 gas= 2225188 hits=[]
+T5    test     in= 7300 logs=10 gas= 2187536 hits=[]
+T6    control  in= 5476 logs=11 gas= 2149276 hits=['A.address.raw', 'amount.be_min']
+H4 repeated words not in baseline: 0
+ALL CHECKS PASSED
+
+$ python -m unittest discover -s tests -v
+test_block_hash_changed (test_tamper.Tamper.test_block_hash_changed) ... ok
+test_control_without_amount_is_caught (test_tamper.Tamper.test_control_without_amount_is_caught) ... ok
+test_input_byte_changed (test_tamper.Tamper.test_input_byte_changed) ... ok
+test_log_data_changed (test_tamper.Tamper.test_log_data_changed) ... ok
+test_log_removed (test_tamper.Tamper.test_log_removed) ... ok
+test_original_passes (test_tamper.Tamper.test_original_passes) ... ok
+test_planted_address_is_caught (test_tamper.Tamper.test_planted_address_is_caught) ... ok
+test_planted_repeated_tag_is_caught (test_tamper.Tamper.test_planted_repeated_tag_is_caught) ... ok
+test_status_flipped_to_failed (test_tamper.Tamper.test_status_flipped_to_failed) ... ok
+test_tx_moved_out_of_block (test_tamper.Tamper.test_tx_moved_out_of_block) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.165s
+
+OK

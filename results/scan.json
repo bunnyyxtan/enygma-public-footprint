@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-19T09:27:00Z",
+ "generated_utc": "2026-11-19T09:44:08Z",
  "trials": {
   "T0": {
    "role": "control",
@@ -621,5 +621,75 @@
  ],
  "h4_repeated_public_constants": {},
  "h4_repeated_words_not_in_baseline": {},
- "failures": []
+ "failures": [],
+ "posthoc_amendment_3": {
+  "P1_other_explorer_tabs": {
+   "hits": {
+    "T0": [
+     "A.address.raw",
+     "A.spend",
+     "amount.ascii",
+     "amount.be_min"
+    ],
+    "T1": [],
+    "T2": [],
+    "T3": [],
+    "T4": [],
+    "T5": [],
+    "T6": [
+     "A.address.raw",
+     "amount.ascii",
+     "amount.be_min"
+    ]
+   },
+   "summary": "test sends with hits: []"
+  },
+  "P2_token_addresses": {
+   "hits": {
+    "T0": {
+     "USDr": [
+      "input",
+      "log2.address",
+      "log3.address",
+      "log4.address"
+     ],
+     "RLS": [
+      "log0.address",
+      "log1.address"
+     ]
+    },
+    "T1": {
+     "USDr": [],
+     "RLS": []
+    },
+    "T2": {
+     "USDr": [],
+     "RLS": []
+    },
+    "T3": {
+     "USDr": [],
+     "RLS": []
+    },
+    "T4": {
+     "USDr": [],
+     "RLS": []
+    },
+    "T5": {
+     "USDr": [],
+     "RLS": []
+    },
+    "T6": {
+     "USDr": [
+      "input",
+      "log3.topic2",
+      "log4.address",
+      "log5.data"
+     ],
+     "RLS": []
+    }
+   },
+   "summary": "test sends with hits: []",
+   "note": "USDr sits at 0x...0400, the same 20 bytes as the number 1024, so a USDr hit can be a plain number"
+  }
+ }
 }
