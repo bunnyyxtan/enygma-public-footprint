@@ -12,8 +12,15 @@ T6: PASS
 X1: PASS
 X2: PASS
 X3: PASS
+S-faucet-rls: PASS
+S-faucet-usdr: PASS
+S-register: PASS
+S1: PASS
+S2: PASS
+F1: PASS
+F2: PASS
 
-$ python scripts/footprint.py scan
+$ python scripts/footprint.py scan --out /tmp/rescan
 T0    control  in= 2340 logs= 8 gas=  981546 hits=['A.address.raw', 'A.spend', 'amount.be_min']
 T1    test     in= 7300 logs=10 gas= 2103973 hits=[]
 T2    test     in= 7300 logs=10 gas= 2103279 hits=[]
@@ -22,6 +29,7 @@ T4    test     in= 7300 logs=10 gas= 2225188 hits=[]
 T5    test     in= 7300 logs=10 gas= 2187536 hits=[]
 T6    control  in= 5476 logs=11 gas= 2149276 hits=['A.address.raw', 'amount.be_min']
 H4 repeated words not in baseline: 0
+Post-hoc (amendment 3): P1_other_explorer_tabs test sends with hits: []; P2_token_addresses test sends with hits: []
 ALL CHECKS PASSED
 
 $ python -m unittest discover -s tests -v
@@ -37,6 +45,27 @@ test_status_flipped_to_failed (test_tamper.Tamper.test_status_flipped_to_failed)
 test_tx_moved_out_of_block (test_tamper.Tamper.test_tx_moved_out_of_block) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.165s
+Ran 10 tests in 0.540s
 
 OK
+
+$ python scripts/footprint.py recheck
+T0: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T1: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T2: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T3: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T4: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T5: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+T6: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+X1: MATCHES CHAIN (tx and block from RPC, receipt from explorer (RPC no longer serves this receipt))
+X2: MATCHES CHAIN (tx and block from RPC, receipt from explorer (RPC no longer serves this receipt))
+X3: MATCHES CHAIN (tx and block from RPC, receipt from explorer (RPC no longer serves this receipt))
+S-faucet-rls: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+S-faucet-usdr: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+S-register: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+S1: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+S2: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+F1: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+F2: MATCHES CHAIN (tx and block from RPC, receipt from RPC)
+recheck OK
+
