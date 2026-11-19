@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-19T08:43:55Z",
+ "generated_utc": "2026-11-19T09:27:00Z",
  "trials": {
   "T0": {
    "role": "control",
@@ -257,84 +257,369 @@
     ],
     "gas_used": 2103279
    }
+  },
+  "T3": {
+   "role": "test",
+   "action": "A sends 3 USDr to B (@qa-test)",
+   "hash": "0xb8a99b1697619134e1672cabcca03e96267fbb7548c0c05f6acece90f92612eb",
+   "block": 24507811,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2193660
+   }
+  },
+  "T4": {
+   "role": "test",
+   "action": "A sends 1 USDr to C (@notyourbunnyy)",
+   "hash": "0x3dcf2737c5111100072ff1568327d85d5c94a89b7b3e992015c232e2160418d1",
+   "block": 24507957,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2225188
+   }
+  },
+  "T5": {
+   "role": "test",
+   "action": "A sends 1 USDr to B (@qa-test), repeat of T1",
+   "hash": "0xe97f3e0ec5c9fdeabbcbb23f2263f3fac8d2c296ca3ddec8dd40b463033de63d",
+   "block": 24508175,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2187536
+   }
+  },
+  "T6": {
+   "role": "control",
+   "action": "A unshields 1 USDr to its own address",
+   "hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0",
+   "block": 24508409,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [
+    {
+     "value": "A.address.raw",
+     "where": "input"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log2.topic2"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log3.topic3"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log4.topic2"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log5.topic1"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "input"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log2.data"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log3.data"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log4.data"
+    }
+   ],
+   "shape": {
+    "input_bytes": 5476,
+    "selector": "0x82ad56cb",
+    "log_count": 11,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0xa96e2506",
+      4,
+      32
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x648ae074",
+      4,
+      32
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "0x0684ec99",
+      4,
+      64
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2149276
+   }
   }
  },
  "shape_reference": "T1",
  "shape_differences": {
   "T1": [],
-  "T2": []
+  "T2": [],
+  "T3": [],
+  "T4": [],
+  "T5": []
  },
- "h4_baseline_sends": [],
- "h4_repeated_public_constants": {
-  "0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000060": [
-   "T1",
-   "T2"
-  ],
-  "28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000c00": [
-   "T1",
-   "T2"
-  ],
-  "437885c05eacc89ce854c46fbeb8290d4c624ea6b561c7a784d86bb5369b2ea3": [
-   "T1",
-   "T2"
-  ],
-  "000000000000000000000000000000000000000000000000000000000000005c": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000440": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000001": [
-   "T1",
-   "T2"
-  ],
-  "00000000000000000000000000000000000000000000000000000000000004a0": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000008": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000002": [
-   "T1",
-   "T2"
-  ],
-  "3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000160": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000040": [
-   "T1",
-   "T2"
-  ],
-  "00000000000000000000000000000000000000000000000000000000000000c0": [
-   "T1",
-   "T2"
-  ],
-  "00000000000000000000000000000000000000000000000000000000000002e0": [
-   "T1",
-   "T2"
-  ],
-  "0000000000000000000000000000000000000000000000000000000000000000": [
-   "T1",
-   "T2"
-  ]
- },
+ "h4_baseline_sends": [
+  "X1",
+  "X2",
+  "X3"
+ ],
+ "h4_repeated_public_constants": {},
  "h4_repeated_words_not_in_baseline": {},
  "failures": []
 }

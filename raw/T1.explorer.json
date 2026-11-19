@@ -9,12 +9,12 @@
   "revert_reason": null,
   "confirmation_duration": [
    0,
-   556.0
+   545.0
   ],
   "transaction_burnt_fee": "100990704000000000",
   "type": 2,
   "token_transfers_overflow": false,
-  "confirmations": 308,
+  "confirmations": 5027,
   "position": 0,
   "max_priority_fee_per_gas": "0",
   "transaction_tag": null,
@@ -669,5 +669,5 @@
   ],
   "next_page_params": null
  },
- "retrieved_utc": "2026-11-19T08:43:16Z"
+ "retrieved_utc": "2026-11-19T09:26:39Z"
 }

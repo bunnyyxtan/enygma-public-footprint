@@ -19,6 +19,21 @@
    "id": "S1",
    "hash": "0xe3ccb25b307d8428622c4f0791c31dcd30647b6f349cafbf0915d41ec9abd153",
    "note": "A shields 30 RLS to pay gas for private actions"
+  },
+  {
+   "id": "S2",
+   "hash": "0x9da6172b29af409916d25cfdb9798b3303ad83ea0884f968a2c995ba4f19ee3f",
+   "note": "A shields its remaining 5.3153 public RLS, 19 Nov 14:42 IST, made in the app, not part of the plan"
+  },
+  {
+   "id": "F1",
+   "hash": "0xde7d488c4e9b30f986b27e1517b2eb0c75a9260810ef37a6ef7e60495d2fc6f3",
+   "note": "private funding from my other account, +42.7998 shielded RLS to A, spends 2 notes, input 7396 bytes"
+  },
+  {
+   "id": "F2",
+   "hash": "0x025a514a21ac4be6be42be6d4dcf3fb1a6b1bd87345dc96b7c7f36d6afeb322a",
+   "note": "private funding from my other account, +5.9725 shielded USDr to A, spends 2 notes, input 7396 bytes"
   }
  ],
  "trials": [
@@ -49,7 +64,60 @@
    "hash": "0x12a50d2f7777644688bbd080741f95c75ff86c89e66b90b1b60ad5e2a72ac3ea",
    "amount_wei": "2000000000000000000",
    "app_reported": "proof 256 bytes, made in 1.9 s, gas 8.28 RLS from shielded RLS"
+  },
+  {
+   "id": "T3",
+   "action": "A sends 3 USDr to B (@qa-test)",
+   "role": "test",
+   "hash": "0xb8a99b1697619134e1672cabcca03e96267fbb7548c0c05f6acece90f92612eb",
+   "amount_wei": "3000000000000000000",
+   "app_reported": "proof 256 bytes, made in 2.0 s, gas 8.28 RLS from shielded RLS"
+  },
+  {
+   "id": "T4",
+   "action": "A sends 1 USDr to C (@notyourbunnyy)",
+   "role": "test",
+   "hash": "0x3dcf2737c5111100072ff1568327d85d5c94a89b7b3e992015c232e2160418d1",
+   "amount_wei": "1000000000000000000",
+   "app_reported": "proof 256 bytes, made in 1.9 s, gas 8.28 RLS from shielded RLS"
+  },
+  {
+   "id": "T5",
+   "action": "A sends 1 USDr to B (@qa-test), repeat of T1",
+   "role": "test",
+   "hash": "0xe97f3e0ec5c9fdeabbcbb23f2263f3fac8d2c296ca3ddec8dd40b463033de63d",
+   "amount_wei": "1000000000000000000",
+   "app_reported": "proof 256 bytes, made in 1.9 s, gas 8.28 RLS from shielded RLS"
+  },
+  {
+   "id": "T6",
+   "action": "A unshields 1 USDr to its own address",
+   "role": "control",
+   "hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0",
+   "amount_wei": "1000000000000000000",
+   "expect_visible": [
+    "A.address.raw",
+    "amount.be_min"
+   ],
+   "app_reported": "proof 256 bytes, made in 0.9 s, gas 8.60 RLS from shielded RLS, fee 0.0025 USDr"
   }
  ],
- "baseline": []
+ "baseline": [
+  {
+   "id": "X1",
+   "hash": "0x6d1390834ebdeec67cc2d822108569568f35ff7a6b04788872161c1b30747472",
+   "note": "block 24470083, 33536 blocks before T1"
+  },
+  {
+   "id": "X2",
+   "hash": "0x0c07128bb45a7b36400f40f4b4a10008387f4722489aad17d905ec3045bf89d0",
+   "note": "block 24444292, 59327 blocks before T1"
+  },
+  {
+   "id": "X3",
+   "hash": "0xad205d9cf0d0849c8764b3ecb296c0d551fe5b162c5e6771ff6b8ae04c3dc2b8",
+   "note": "block 24433455, 70164 blocks before T1"
+  }
+ ],
+ "baseline_rule_note": "Picked by the preregistered rule. The 3 relayer transactions closest to T1 to T5 with 7300 byte input and the same event list as T1, excluding every study and setup transaction. 301 relayer transactions were checked back to block 24433455. None qualified inside or after the trial window. Who sent them is not known, they were chosen only by the rule. They happen to be the same 3 used in the pilot, because they are the nearest ones."
 }

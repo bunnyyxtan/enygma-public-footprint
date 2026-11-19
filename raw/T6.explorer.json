@@ -1,0 +1,806 @@
+{
+ "tx": {
+  "priority_fee": "0",
+  "raw_input": "0x82ad56cb000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000072000000000000000000000000012b6640048deb2e8ffda4bc10bb2a640b70eca6d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000644e207632000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000005c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd10000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2000000000000000000000000000000000000000000000000000000000015fadd0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000006afec2a0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000003c46a0dd2be00000000000000000000000000000000000000000000000000000000000000a00000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd10000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000038000000000000000000000000000000000000000000000000000000000000003a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000de0b6b3a764000000000000000000000000000000000000000000000000000000000000000004001b06f2c32bbefc034632a9358856588bc7687f56e60a31301532aafd3fe1c2701d01aaea3ff6c5646bfe4ea9ebb148cb56bb5c36eb344c38dd6f25b9da4a66432be743afedfcd51d7118730d0dfcf0637cdb95b6ebd17e9faf5d69d578736c760c74fcc994d0091617a58543674cede93b94ca7cba886cf0ca90deb8937ef85a2a6fdf7467db7d5962a62a2a8d98f3483108597c733595b283df12e71d80cd941c6ae1c20c59f019938075387e64143afcf0b1155e057470e7ac9d6f3dc725d220f610a0b486fd34a928e83a37dac08c77dde5e5aaa83d92465d19e35eec4c4114224ef6820d42565d8d0ea63fcf03a1e7b5efcd74be4ff4269c15d62c9d371e0000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000001691fc4085a51666f604064e342a5358151d78fa31aaa10c1e4d3217b94cbfe605692ef2264f1afe2b00f70c32c9d2512b1a8af93bc7b04dbf48842043aa09732745e3a2d0729b4db37eb9dcf1af96ca09afd928b94ce9e897544ee50bdec17807e4365845714e7321608b152d2d20385510258e30e3cb5a6cb245908ef8d5f60000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c204410c360230a295b13d66d8d6c1a24c44311531e39c64f66c7301b49d85a46c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004131dc71acf81c844db7e1e41643a172e2a4e7110893525d3a4ef0a66e4916644f195287e147ad8ec64abf3297f908dd18443f90bcd7bc5529e3ae72cb2464009e1b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000d64aacd552c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000002e00000000000000000000000000000000000000000000000000000000000000c0022dddaf1b03cb35f7190d01bca9576dbff085fa4e703c84c6770e9bebcf11f752838c92030811e65149a59ed51c0c72742a5ba5f38c0ad12eac74a73490f3cce17229ac7ea1520b19e215c282fa7382f18ad743fc1aff9983332dc30353702640302a1504716e741b965588c80ce8f462dfe93506472c9571233e6277b02e03917a2b18926733fefe4bd5f63030ce197b4f50a49d362623fabea843ef86d65c00f8bc239137a289215f4e7dfe0609fc612e89626018062d935e05864b40e5b491521b5136752bcd95139498b556a043d526c75ce6496c5513b37258c0641c8570c500d1de48aba3c56a5a5948849075962050ce03d7179fad41aae06b485b63e0000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001691fc4085a51666f604064e342a5358151d78fa31aaa10c1e4d3217b94cbfe6125410a25b92c01d1f4177b897db1d2c04e68cbdd1e4dd89e60719271b965c391c8bf78cab1bc4c330f494b6cbbe6f4b9c0c0a156f194997e81924a84326dd23134e0dc9ee28e8e497720136a28f8e6b6e1bd4aa00d7c2dec658d6f0993d3e6b0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c215b2aa153546908189ff31eddc9d3183d2d3b4132c811d34b5d232f6816b66520000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000004a00000000000000000000000000000000000000000000000000000000000000440eb0001906d4742fd47ca3b73ff3d0de6e4c7ca31fe786156ad0df5624dd791dde3e631e26b05326ea2e665a1c5af5e12363c68dbccc6ea39d0dd2280a9eaa1b9c4fd0b02c50368976534ff7ebd49a3e9eb2da50e746aeb96f5a0f5e8f9d78c08b168bacc9b77107563ed55e03983bbdb52125c0cbdf2f7cd2e73994b01a8b7f430b43aa878d449eb32b79945685655519ccee606a82a33f69ecce16906548b5aee5097e9351312fbb1976593e5ecb3ab1c8cf1903b990e6dc09a7e2e89935fcc7443ff0a3f7bfb23466b2490626734c10212452a45e89ccf2eb676ad6a128d8512a517f1c081a6cc1df8ec091655e8d79b111e525d55b2be1b63d11e1bf7b06999d08d718cfd483b088c8b4e957bb03c7cc383fa2d2992e4567053d710faa90fa4e8cd720182c521a134878ed42cdeb6671e098315f4b012cf1c8121197e1d32bc4671f2803c40a9b6742a20585ce1fc48cc7c482e0c1fa1ad8e54e0c2c93ba04f5d49e7620fa5e6f228a77183cff64721102cc6e03f76a55099a60633f4e9ca47e23143ffdda0aa5b3fa3148e1739905e283d7e8a213d7e7ae5623540e07391f578115a0131ae42a0dad5093dbfb721cd67d8f661e84b601316b16f28a9cd107c7b45c7d4b31b4b6760218600f3f40a7db23eeb867719f2074b322b7f3ec60b9c56730b2b89b1cab1f2147a2df93d9bffa93df172229781eeb5dc7767a9fc8fd6c1dfdb2f4c8e11aa978daa789e86fd423d786697d9d6afeebbf2fe417e2015b552a0015c7eb021e083088b2b30cc9d6fde9519eb612d8de947af2e048ee816a18f751848fe183672a5a1255591304637db469c52c90c88688e7c4df7c28e40542e14b026b8070ecfc69bb3fd70b71841df8a0093a7b30989f92c152771545988a9de6412f2226232a7abb27a5f1ce85eecfd1d9337352198fa52b2510d684dfa149a148f78110c475beb3e355a7c7ab24b24349fab96a3d3c89eac7f85301ddfade53d57af7c71003d4d3d8c8e6d2944a6aa3ca5152df8c99c13b1d79147bd683353c5053d0276597d244f24133394cb2f67d472c8e7c1f56c3996efada5e2367a3f0413aa4b8bcbcdd69b78239a6fd472e1978511c374bb96ac09e2c8df1b0d124243b86673581a16f87996a24e0c77a3abb610aaba34aa1144c61c3ed150eb90044ec00238bea7cd5c0d509ee2b7ea7d559fcc4615fc59dbb109eabb21c7f2262ad8499e6a4c03158d05f6f970b1df7f278783da5c4919ccc92aada9574cfff3428917eb84f2498959319b4a7bc0c52a014933f35aeeda654cb7730cde8df375f9786c335568f8e11c163a1aeaa850f9818d1a4865c05949b27d0b4c7a84695fb87153be85fc278dcc19ffbc29067ed4a903743943e72669ce9b38c146dfef51229c8e351bafb0f82c52fc1890d0dd7114df78fe51d5e10608820d7b38933d7d80a80283b31f09ba9c4990343baf1e535f981f4a316015bbddb74cc0957a290a597c886f69d6378203af215792a6af9ec0db9eeb4dd04ddfcb5e5c2e08370000000000000000000000000000000000000000000000000000000000000440fc712553b6d74325e3bd252e929b45a7d1a471de97d47c2e0dbfdf0bef5b23d79d6559dabff3a4b24d9803850031d4f3b42c375846b7706faf256d01b02fa196f73e5414bb9e1ae08f2b816101f066ce2baf4c2b9957e59e12ec449dd4f064558f6bdc1683038d0fe1ac87ac36f69dbed89b256cdbd29df5565ee220f9c128598b50926f0b4a7ccb0f5299914f6645438c80d901e6c35cca7d825890c70167f6754f2c33946bb381765d433ea77f31f425d622e7abd8fdf6d736021ed866177f7651cf56629cc3eef4d1720563f6016049e54ecfd89b3d71668b25b941f5d2f3f4aaf685151ab1143aa751058e027dc5012bfbf4d8189e24799029071303c34fb16ba856efa6faa841f48f8972f4adec4d2084705754979fa05ed0e49741da2f77e35006dfd43f9904266f799b8f3cf1033052b28b89df7b9bd9b51c4f228bd12fe0562ad26a5832083208fa8e80318d98b6449891e4691ba3002db721e89a2520a1648540420be6e23fb678809f00dc408fc0faf08be04f867a3b53591e4a7c00ffe1891f4a173fdab208b29b2fc0b76e7d63093f0fcf7dda3ef41b44d7d60b694901395352b96822ee16b90edda706f835ea319732a3c9581d1fbbf91bfc816f4c30b1e02403b35ef52cb50fa6425dbe68d15ccc8d7799d96c9cb73b605777861a11c8fd077f1744e84ff11b59b882730a13f3fa21873312f95fe3bd6b9f877ad5a34a80d17c368a944f8d55fddc6b2adef6b96a14939d00c5159a250bf862fdb8f85bed22ca4c6587a628fd1dd578dde9fbb886b9d29ac0d8ed089657d35e12ab0023a171110132bb599f43f9670a01aee74fa8811876d4a9612c7ec66460846073bd7d3b1b0bef0a24745630352d155226df2889cb8c26ec7ad51afd927bdc37b91bb0ab0ac67b97643a8daebbb8313e259d04fa84f81fcb97923d462b07272ca4835fa31f54fa306caf226cc826387bf7dfbc34a5ddc24c028b602a953c23a70da63181fe365a14701655c77a6bc1b1cbe1c23cf8db2480620e946fd56f997315f9403ffc0b2276083517217ca3829ff0c81187794ec27ba07b5b1dd7a20d6675f8613fa0cabd7a6e08622a7041e341141069b37147e55a8ee48cea39f5931d86ba89744803ca202e867e4f3a7900ca183b6b4e19b80135247399ddc67bd1e1eadb83d6bd4d7964b94759765fbdcf5046ff974d30e48692cb4d6c9a6689e9376dc7b093e2f4d3867773476d6e3b7282e22e9cba08dfed86d699f1a3174e38af1d7e19f1a4794f1dc5b12811b2d1d34df092b9b6192597b639bd6a9c43f7eb5f593fe9632ed675a37521c0b634daa5bffdcd06117cd3b7a35775a5f34998a84cd2e8333e78eed72c0f54a0cbed2c8b46fd82387d849a9d2cf6f23c1e704ca99b31b7d11d9942ea04ce4fbf6fc7980dcc4d521aa2dec0cb0b41f83474a423148b403c33927e8b3a833d2825576c1a2cb132b61259b0e472c70192961b4b34f41043680d996cfdc57c2ff0585a805499c18fb00297554359ee064dda6177ae0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000005c52355ed9a53757e0f5c5dc6fb77e28c02544b87160c3e22bbf19f26cec1d0b232213c6cd9458420b5e231a15b63e34c8ca82d67011ea022cc058da3380c79d83b397d8f660992e9cc83c639ec55baa4db95e78fd24a66848ce6e8bd800000000000000000000000000000000000000000000000000000000000000000000005cca1e90465f8b1f2b13eea3d0994f5cc00cdce3cfd10bf059d30ce1cbedd0812bbdfec19a8e7a4922c9fac79de4064ba5619e27ed7d7ba4715f65f37d873b6abe3bec9e1b2d1c16217ec9a64647a5865946e09d3f473b291b8c07ae650000000000000000000000000000000000000000000000000000000000000000",
+  "is_pending_update": false,
+  "result": "success",
+  "hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0",
+  "max_fee_per_gas": "57600000000",
+  "revert_reason": null,
+  "confirmation_duration": [
+   0,
+   545.0
+  ],
+  "transaction_burnt_fee": "103165248000000000",
+  "type": 2,
+  "token_transfers_overflow": false,
+  "confirmations": 257,
+  "position": 0,
+  "max_priority_fee_per_gas": "0",
+  "transaction_tag": null,
+  "created_contract": null,
+  "value": "0",
+  "from": {
+   "ens_domain_name": null,
+   "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+   "implementations": [],
+   "is_contract": false,
+   "is_scam": false,
+   "is_verified": false,
+   "metadata": null,
+   "name": null,
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "gas_used": "2149276",
+  "status": "ok",
+  "to": {
+   "ens_domain_name": null,
+   "hash": "0xcA11bde05977b3631167028862bE2a173976CA11",
+   "implementations": [],
+   "is_contract": true,
+   "is_scam": false,
+   "is_verified": false,
+   "metadata": null,
+   "name": null,
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "authorization_list": [],
+  "method": "0x82ad56cb",
+  "fee": {
+   "type": "actual",
+   "value": "103165248000000000"
+  },
+  "gas_limit": "2649699",
+  "gas_price": "48000000000",
+  "decoded_input": null,
+  "fhe_operations_count": 0,
+  "token_transfers": [
+   {
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "from": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "log_index": 4,
+    "method": null,
+    "timestamp": null,
+    "to": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_type": "ERC-20",
+    "total": {
+     "decimals": "18",
+     "value": "1000000000000000000"
+    },
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0",
+    "type": "token_transfer"
+   }
+  ],
+  "base_fee_per_gas": "48000000000",
+  "timestamp": "2026-11-19T09:24:29.000000Z",
+  "nonce": 3821,
+  "historic_exchange_rate": null,
+  "transaction_types": [
+   "contract_call",
+   "token_transfer"
+  ],
+  "exchange_rate": null,
+  "block_number": 24508409,
+  "has_error_in_internal_transactions": null
+ },
+ "logs": {
+  "items": [
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Nullifier(uint256 indexed vaultId, uint256 indexed treeNumber, uint256 indexed nullifier)",
+     "method_id": "437885c0",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "treeNumber",
+       "type": "uint256",
+       "value": "0"
+      },
+      {
+       "indexed": true,
+       "name": "nullifier",
+       "type": "uint256",
+       "value": "2447407193391517287101627146149014944683409706430562589613471308990414195059"
+      }
+     ]
+    },
+    "index": 0,
+    "smart_contract": null,
+    "topics": [
+     "0x437885c05eacc89ce854c46fbeb8290d4c624ea6b561c7a784d86bb5369b2ea3",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "0x05692ef2264f1afe2b00f70c32c9d2512b1a8af93bc7b04dbf48842043aa0973"
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Commitment(uint256 indexed vaultId, uint256 indexed commitment)",
+     "method_id": "28ec6d3c",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "3569406144943529438186410738417680664957737566311295814859826242573213160950"
+      }
+     ]
+    },
+    "index": 1,
+    "smart_contract": null,
+    "topics": [
+     "0x28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x07e4365845714e7321608b152d2d20385510258e30e3cb5a6cb245908ef8d5f6",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+    "decoded": {
+     "method_call": "PartialWithdrawal(uint256 indexed vaultId, address indexed recipient, uint256 amount, uint256 indexed changeCommitment)",
+     "method_id": "a96e2506",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "recipient",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": false,
+       "name": "amount",
+       "type": "uint256",
+       "value": "1000000000000000000"
+      },
+      {
+       "indexed": true,
+       "name": "changeCommitment",
+       "type": "uint256",
+       "value": "3569406144943529438186410738417680664957737566311295814859826242573213160950"
+      }
+     ]
+    },
+    "index": 2,
+    "smart_contract": null,
+    "topics": [
+     "0xa96e2506faef44a4c72b6ef256b777774d2e569a022e8dc4e8fad0f71e39484f",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x07e4365845714e7321608b152d2d20385510258e30e3cb5a6cb245908ef8d5f6"
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+    "decoded": {
+     "method_call": "PaidOut(uint256 indexed vaultId, address indexed token, address indexed recipient, uint256 amount)",
+     "method_id": "648ae074",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "token",
+       "type": "address",
+       "value": "0x0000000000000000000000000000000000000400"
+      },
+      {
+       "indexed": true,
+       "name": "recipient",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": false,
+       "name": "amount",
+       "type": "uint256",
+       "value": "1000000000000000000"
+      }
+     ]
+    },
+    "index": 3,
+    "smart_contract": null,
+    "topics": [
+     "0x648ae074e8c7e2b5c75fc82672c363a1b0fa293a1ce08cba5e9dbeec37eb8ae8",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x0000000000000000000000000000000000000000000000000000000000000400",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1"
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x0000000000000000000000000000000000000400",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": "USD Rayls",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+    "decoded": {
+     "method_call": "Transfer(address indexed from, address indexed to, uint256 value)",
+     "method_id": "ddf252ad",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "1000000000000000000"
+      }
+     ]
+    },
+    "index": 4,
+    "smart_contract": null,
+    "topics": [
+     "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+     "0x0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "RlsGasForwarder",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000",
+    "decoded": {
+     "method_call": "Relayed(address indexed from, address indexed to, uint256 nonce, address indexed relayer, uint256 fee)",
+     "method_id": "0684ec99",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2"
+      },
+      {
+       "indexed": false,
+       "name": "nonce",
+       "type": "uint256",
+       "value": "4"
+      },
+      {
+       "indexed": true,
+       "name": "relayer",
+       "type": "address",
+       "value": "0xcA11bde05977b3631167028862bE2a173976CA11"
+      },
+      {
+       "indexed": false,
+       "name": "fee",
+       "type": "uint256",
+       "value": "0"
+      }
+     ]
+    },
+    "index": 5,
+    "smart_contract": null,
+    "topics": [
+     "0x0684ec99c5a024d68812ca8b1a1fc50eb479a6b72828732541183a0a28be4a41",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+     "0x000000000000000000000000ca11bde05977b3631167028862be2a173976ca11"
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Nullifier(uint256 indexed vaultId, uint256 indexed treeNumber, uint256 indexed nullifier)",
+     "method_id": "437885c0",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "treeNumber",
+       "type": "uint256",
+       "value": "0"
+      },
+      {
+       "indexed": true,
+       "name": "nullifier",
+       "type": "uint256",
+       "value": "8290161233036876174916841972405230783760504353624468915461316863677080951865"
+      }
+     ]
+    },
+    "index": 6,
+    "smart_contract": null,
+    "topics": [
+     "0x437885c05eacc89ce854c46fbeb8290d4c624ea6b561c7a784d86bb5369b2ea3",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x0000000000000000000000000000000000000000000000000000000000000000",
+     "0x125410a25b92c01d1f4177b897db1d2c04e68cbdd1e4dd89e60719271b965c39"
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Commitment(uint256 indexed vaultId, uint256 indexed commitment)",
+     "method_id": "28ec6d3c",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "12912060026095670182787315477547596750665986592389297096312923402285370236195"
+      }
+     ]
+    },
+    "index": 7,
+    "smart_contract": null,
+    "topics": [
+     "0x28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x1c8bf78cab1bc4c330f494b6cbbe6f4b9c0c0a156f194997e81924a84326dd23",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Commitment(uint256 indexed vaultId, uint256 indexed commitment)",
+     "method_id": "28ec6d3c",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "8731853360867718438617206588455147998228122042588309160075094915859716324971"
+      }
+     ]
+    },
+    "index": 8,
+    "smart_contract": null,
+    "topics": [
+     "0x28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x134e0dc9ee28e8e497720136a28f8e6b6e1bd4aa00d7c2dec658d6f0993d3e6b",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000004a00000000000000000000000000000000000000000000000000000000000000440eb0001906d4742fd47ca3b73ff3d0de6e4c7ca31fe786156ad0df5624dd791dde3e631e26b05326ea2e665a1c5af5e12363c68dbccc6ea39d0dd2280a9eaa1b9c4fd0b02c50368976534ff7ebd49a3e9eb2da50e746aeb96f5a0f5e8f9d78c08b168bacc9b77107563ed55e03983bbdb52125c0cbdf2f7cd2e73994b01a8b7f430b43aa878d449eb32b79945685655519ccee606a82a33f69ecce16906548b5aee5097e9351312fbb1976593e5ecb3ab1c8cf1903b990e6dc09a7e2e89935fcc7443ff0a3f7bfb23466b2490626734c10212452a45e89ccf2eb676ad6a128d8512a517f1c081a6cc1df8ec091655e8d79b111e525d55b2be1b63d11e1bf7b06999d08d718cfd483b088c8b4e957bb03c7cc383fa2d2992e4567053d710faa90fa4e8cd720182c521a134878ed42cdeb6671e098315f4b012cf1c8121197e1d32bc4671f2803c40a9b6742a20585ce1fc48cc7c482e0c1fa1ad8e54e0c2c93ba04f5d49e7620fa5e6f228a77183cff64721102cc6e03f76a55099a60633f4e9ca47e23143ffdda0aa5b3fa3148e1739905e283d7e8a213d7e7ae5623540e07391f578115a0131ae42a0dad5093dbfb721cd67d8f661e84b601316b16f28a9cd107c7b45c7d4b31b4b6760218600f3f40a7db23eeb867719f2074b322b7f3ec60b9c56730b2b89b1cab1f2147a2df93d9bffa93df172229781eeb5dc7767a9fc8fd6c1dfdb2f4c8e11aa978daa789e86fd423d786697d9d6afeebbf2fe417e2015b552a0015c7eb021e083088b2b30cc9d6fde9519eb612d8de947af2e048ee816a18f751848fe183672a5a1255591304637db469c52c90c88688e7c4df7c28e40542e14b026b8070ecfc69bb3fd70b71841df8a0093a7b30989f92c152771545988a9de6412f2226232a7abb27a5f1ce85eecfd1d9337352198fa52b2510d684dfa149a148f78110c475beb3e355a7c7ab24b24349fab96a3d3c89eac7f85301ddfade53d57af7c71003d4d3d8c8e6d2944a6aa3ca5152df8c99c13b1d79147bd683353c5053d0276597d244f24133394cb2f67d472c8e7c1f56c3996efada5e2367a3f0413aa4b8bcbcdd69b78239a6fd472e1978511c374bb96ac09e2c8df1b0d124243b86673581a16f87996a24e0c77a3abb610aaba34aa1144c61c3ed150eb90044ec00238bea7cd5c0d509ee2b7ea7d559fcc4615fc59dbb109eabb21c7f2262ad8499e6a4c03158d05f6f970b1df7f278783da5c4919ccc92aada9574cfff3428917eb84f2498959319b4a7bc0c52a014933f35aeeda654cb7730cde8df375f9786c335568f8e11c163a1aeaa850f9818d1a4865c05949b27d0b4c7a84695fb87153be85fc278dcc19ffbc29067ed4a903743943e72669ce9b38c146dfef51229c8e351bafb0f82c52fc1890d0dd7114df78fe51d5e10608820d7b38933d7d80a80283b31f09ba9c4990343baf1e535f981f4a316015bbddb74cc0957a290a597c886f69d6378203af215792a6af9ec0db9eeb4dd04ddfcb5e5c2e0837000000000000000000000000000000000000000000000000000000000000005c52355ed9a53757e0f5c5dc6fb77e28c02544b87160c3e22bbf19f26cec1d0b232213c6cd9458420b5e231a15b63e34c8ca82d67011ea022cc058da3380c79d83b397d8f660992e9cc83c639ec55baa4db95e78fd24a66848ce6e8bd800000000",
+    "decoded": {
+     "method_call": "EncryptedNote(uint256 indexed vaultId, uint256 indexed commitment, bytes ciphertextI, bytes ciphertextII)",
+     "method_id": "3703497a",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "12912060026095670182787315477547596750665986592389297096312923402285370236195"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextI",
+       "type": "bytes",
+       "value": "0xeb0001906d4742fd47ca3b73ff3d0de6e4c7ca31fe786156ad0df5624dd791dde3e631e26b05326ea2e665a1c5af5e12363c68dbccc6ea39d0dd2280a9eaa1b9c4fd0b02c50368976534ff7ebd49a3e9eb2da50e746aeb96f5a0f5e8f9d78c08b168bacc9b77107563ed55e03983bbdb52125c0cbdf2f7cd2e73994b01a8b7f430b43aa878d449eb32b79945685655519ccee606a82a33f69ecce16906548b5aee5097e9351312fbb1976593e5ecb3ab1c8cf1903b990e6dc09a7e2e89935fcc7443ff0a3f7bfb23466b2490626734c10212452a45e89ccf2eb676ad6a128d8512a517f1c081a6cc1df8ec091655e8d79b111e525d55b2be1b63d11e1bf7b06999d08d718cfd483b088c8b4e957bb03c7cc383fa2d2992e4567053d710faa90fa4e8cd720182c521a134878ed42cdeb6671e098315f4b012cf1c8121197e1d32bc4671f2803c40a9b6742a20585ce1fc48cc7c482e0c1fa1ad8e54e0c2c93ba04f5d49e7620fa5e6f228a77183cff64721102cc6e03f76a55099a60633f4e9ca47e23143ffdda0aa5b3fa3148e1739905e283d7e8a213d7e7ae5623540e07391f578115a0131ae42a0dad5093dbfb721cd67d8f661e84b601316b16f28a9cd107c7b45c7d4b31b4b6760218600f3f40a7db23eeb867719f2074b322b7f3ec60b9c56730b2b89b1cab1f2147a2df93d9bffa93df172229781eeb5dc7767a9fc8fd6c1dfdb2f4c8e11aa978daa789e86fd423d786697d9d6afeebbf2fe417e2015b552a0015c7eb021e083088b2b30cc9d6fde9519eb612d8de947af2e048ee816a18f751848fe183672a5a1255591304637db469c52c90c88688e7c4df7c28e40542e14b026b8070ecfc69bb3fd70b71841df8a0093a7b30989f92c152771545988a9de6412f2226232a7abb27a5f1ce85eecfd1d9337352198fa52b2510d684dfa149a148f78110c475beb3e355a7c7ab24b24349fab96a3d3c89eac7f85301ddfade53d57af7c71003d4d3d8c8e6d2944a6aa3ca5152df8c99c13b1d79147bd683353c5053d0276597d244f24133394cb2f67d472c8e7c1f56c3996efada5e2367a3f0413aa4b8bcbcdd69b78239a6fd472e1978511c374bb96ac09e2c8df1b0d124243b86673581a16f87996a24e0c77a3abb610aaba34aa1144c61c3ed150eb90044ec00238bea7cd5c0d509ee2b7ea7d559fcc4615fc59dbb109eabb21c7f2262ad8499e6a4c03158d05f6f970b1df7f278783da5c4919ccc92aada9574cfff3428917eb84f2498959319b4a7bc0c52a014933f35aeeda654cb7730cde8df375f9786c335568f8e11c163a1aeaa850f9818d1a4865c05949b27d0b4c7a84695fb87153be85fc278dcc19ffbc29067ed4a903743943e72669ce9b38c146dfef51229c8e351bafb0f82c52fc1890d0dd7114df78fe51d5e10608820d7b38933d7d80a80283b31f09ba9c4990343baf1e535f981f4a316015bbddb74cc0957a290a597c886f69d6378203af215792a6af9ec0db9eeb4dd04ddfcb5e5c2e0837"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextII",
+       "type": "bytes",
+       "value": "0x52355ed9a53757e0f5c5dc6fb77e28c02544b87160c3e22bbf19f26cec1d0b232213c6cd9458420b5e231a15b63e34c8ca82d67011ea022cc058da3380c79d83b397d8f660992e9cc83c639ec55baa4db95e78fd24a66848ce6e8bd8"
+      }
+     ]
+    },
+    "index": 9,
+    "smart_contract": null,
+    "topics": [
+     "0x3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x1c8bf78cab1bc4c330f494b6cbbe6f4b9c0c0a156f194997e81924a84326dd23",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x843d2c833159edb480349cddd3b26bb128e66f85884495e944f221ee406a5d1e",
+    "block_number": 24508409,
+    "block_timestamp": "2026-11-19T09:24:29.000000Z",
+    "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000004a00000000000000000000000000000000000000000000000000000000000000440fc712553b6d74325e3bd252e929b45a7d1a471de97d47c2e0dbfdf0bef5b23d79d6559dabff3a4b24d9803850031d4f3b42c375846b7706faf256d01b02fa196f73e5414bb9e1ae08f2b816101f066ce2baf4c2b9957e59e12ec449dd4f064558f6bdc1683038d0fe1ac87ac36f69dbed89b256cdbd29df5565ee220f9c128598b50926f0b4a7ccb0f5299914f6645438c80d901e6c35cca7d825890c70167f6754f2c33946bb381765d433ea77f31f425d622e7abd8fdf6d736021ed866177f7651cf56629cc3eef4d1720563f6016049e54ecfd89b3d71668b25b941f5d2f3f4aaf685151ab1143aa751058e027dc5012bfbf4d8189e24799029071303c34fb16ba856efa6faa841f48f8972f4adec4d2084705754979fa05ed0e49741da2f77e35006dfd43f9904266f799b8f3cf1033052b28b89df7b9bd9b51c4f228bd12fe0562ad26a5832083208fa8e80318d98b6449891e4691ba3002db721e89a2520a1648540420be6e23fb678809f00dc408fc0faf08be04f867a3b53591e4a7c00ffe1891f4a173fdab208b29b2fc0b76e7d63093f0fcf7dda3ef41b44d7d60b694901395352b96822ee16b90edda706f835ea319732a3c9581d1fbbf91bfc816f4c30b1e02403b35ef52cb50fa6425dbe68d15ccc8d7799d96c9cb73b605777861a11c8fd077f1744e84ff11b59b882730a13f3fa21873312f95fe3bd6b9f877ad5a34a80d17c368a944f8d55fddc6b2adef6b96a14939d00c5159a250bf862fdb8f85bed22ca4c6587a628fd1dd578dde9fbb886b9d29ac0d8ed089657d35e12ab0023a171110132bb599f43f9670a01aee74fa8811876d4a9612c7ec66460846073bd7d3b1b0bef0a24745630352d155226df2889cb8c26ec7ad51afd927bdc37b91bb0ab0ac67b97643a8daebbb8313e259d04fa84f81fcb97923d462b07272ca4835fa31f54fa306caf226cc826387bf7dfbc34a5ddc24c028b602a953c23a70da63181fe365a14701655c77a6bc1b1cbe1c23cf8db2480620e946fd56f997315f9403ffc0b2276083517217ca3829ff0c81187794ec27ba07b5b1dd7a20d6675f8613fa0cabd7a6e08622a7041e341141069b37147e55a8ee48cea39f5931d86ba89744803ca202e867e4f3a7900ca183b6b4e19b80135247399ddc67bd1e1eadb83d6bd4d7964b94759765fbdcf5046ff974d30e48692cb4d6c9a6689e9376dc7b093e2f4d3867773476d6e3b7282e22e9cba08dfed86d699f1a3174e38af1d7e19f1a4794f1dc5b12811b2d1d34df092b9b6192597b639bd6a9c43f7eb5f593fe9632ed675a37521c0b634daa5bffdcd06117cd3b7a35775a5f34998a84cd2e8333e78eed72c0f54a0cbed2c8b46fd82387d849a9d2cf6f23c1e704ca99b31b7d11d9942ea04ce4fbf6fc7980dcc4d521aa2dec0cb0b41f83474a423148b403c33927e8b3a833d2825576c1a2cb132b61259b0e472c70192961b4b34f41043680d996cfdc57c2ff0585a805499c18fb00297554359ee064dda6177ae000000000000000000000000000000000000000000000000000000000000005cca1e90465f8b1f2b13eea3d0994f5cc00cdce3cfd10bf059d30ce1cbedd0812bbdfec19a8e7a4922c9fac79de4064ba5619e27ed7d7ba4715f65f37d873b6abe3bec9e1b2d1c16217ec9a64647a5865946e09d3f473b291b8c07ae6500000000",
+    "decoded": {
+     "method_call": "EncryptedNote(uint256 indexed vaultId, uint256 indexed commitment, bytes ciphertextI, bytes ciphertextII)",
+     "method_id": "3703497a",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "8731853360867718438617206588455147998228122042588309160075094915859716324971"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextI",
+       "type": "bytes",
+       "value": "0xfc712553b6d74325e3bd252e929b45a7d1a471de97d47c2e0dbfdf0bef5b23d79d6559dabff3a4b24d9803850031d4f3b42c375846b7706faf256d01b02fa196f73e5414bb9e1ae08f2b816101f066ce2baf4c2b9957e59e12ec449dd4f064558f6bdc1683038d0fe1ac87ac36f69dbed89b256cdbd29df5565ee220f9c128598b50926f0b4a7ccb0f5299914f6645438c80d901e6c35cca7d825890c70167f6754f2c33946bb381765d433ea77f31f425d622e7abd8fdf6d736021ed866177f7651cf56629cc3eef4d1720563f6016049e54ecfd89b3d71668b25b941f5d2f3f4aaf685151ab1143aa751058e027dc5012bfbf4d8189e24799029071303c34fb16ba856efa6faa841f48f8972f4adec4d2084705754979fa05ed0e49741da2f77e35006dfd43f9904266f799b8f3cf1033052b28b89df7b9bd9b51c4f228bd12fe0562ad26a5832083208fa8e80318d98b6449891e4691ba3002db721e89a2520a1648540420be6e23fb678809f00dc408fc0faf08be04f867a3b53591e4a7c00ffe1891f4a173fdab208b29b2fc0b76e7d63093f0fcf7dda3ef41b44d7d60b694901395352b96822ee16b90edda706f835ea319732a3c9581d1fbbf91bfc816f4c30b1e02403b35ef52cb50fa6425dbe68d15ccc8d7799d96c9cb73b605777861a11c8fd077f1744e84ff11b59b882730a13f3fa21873312f95fe3bd6b9f877ad5a34a80d17c368a944f8d55fddc6b2adef6b96a14939d00c5159a250bf862fdb8f85bed22ca4c6587a628fd1dd578dde9fbb886b9d29ac0d8ed089657d35e12ab0023a171110132bb599f43f9670a01aee74fa8811876d4a9612c7ec66460846073bd7d3b1b0bef0a24745630352d155226df2889cb8c26ec7ad51afd927bdc37b91bb0ab0ac67b97643a8daebbb8313e259d04fa84f81fcb97923d462b07272ca4835fa31f54fa306caf226cc826387bf7dfbc34a5ddc24c028b602a953c23a70da63181fe365a14701655c77a6bc1b1cbe1c23cf8db2480620e946fd56f997315f9403ffc0b2276083517217ca3829ff0c81187794ec27ba07b5b1dd7a20d6675f8613fa0cabd7a6e08622a7041e341141069b37147e55a8ee48cea39f5931d86ba89744803ca202e867e4f3a7900ca183b6b4e19b80135247399ddc67bd1e1eadb83d6bd4d7964b94759765fbdcf5046ff974d30e48692cb4d6c9a6689e9376dc7b093e2f4d3867773476d6e3b7282e22e9cba08dfed86d699f1a3174e38af1d7e19f1a4794f1dc5b12811b2d1d34df092b9b6192597b639bd6a9c43f7eb5f593fe9632ed675a37521c0b634daa5bffdcd06117cd3b7a35775a5f34998a84cd2e8333e78eed72c0f54a0cbed2c8b46fd82387d849a9d2cf6f23c1e704ca99b31b7d11d9942ea04ce4fbf6fc7980dcc4d521aa2dec0cb0b41f83474a423148b403c33927e8b3a833d2825576c1a2cb132b61259b0e472c70192961b4b34f41043680d996cfdc57c2ff0585a805499c18fb00297554359ee064dda6177ae"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextII",
+       "type": "bytes",
+       "value": "0xca1e90465f8b1f2b13eea3d0994f5cc00cdce3cfd10bf059d30ce1cbedd0812bbdfec19a8e7a4922c9fac79de4064ba5619e27ed7d7ba4715f65f37d873b6abe3bec9e1b2d1c16217ec9a64647a5865946e09d3f473b291b8c07ae65"
+      }
+     ]
+    },
+    "index": 10,
+    "smart_contract": null,
+    "topics": [
+     "0x3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x134e0dc9ee28e8e497720136a28f8e6b6e1bd4aa00d7c2dec658d6f0993d3e6b",
+     null
+    ],
+    "transaction_hash": "0x686f8d387df6f4d65bcdcb4fd5e1ceb93b311f23c744320142b0c0bbbe1911b0"
+   }
+  ],
+  "next_page_params": null
+ },
+ "retrieved_utc": "2026-11-19T09:26:51Z"
+}
