@@ -1,0 +1,465 @@
+{
+ "generated_utc": "2026-11-19T08:17:39Z",
+ "trials": {
+  "P0": {
+   "role": "control",
+   "action": "shield 1 USDr",
+   "hash": "0xe1677f5cbe344b850556f6f79e27500e85e67efb7e0c2183575fa30a73d584d0",
+   "block": 24086556,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [
+    {
+     "value": "A.address.raw",
+     "where": "input"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log0.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log1.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log5.topic1"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "input"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log0.data"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log2.data"
+    }
+   ],
+   "shape": {
+    "input_bytes": 6212,
+    "selector": "0x82ad56cb",
+    "log_count": 11,
+    "events": [
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0x98de5035",
+      3,
+      0
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "0x0684ec99",
+      4,
+      64
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2102962
+   }
+  },
+  "P1": {
+   "role": "test",
+   "action": "send 1 USDr A to @testing",
+   "hash": "0x5d1d1d95e140bb231a46c8702aaf50393d4d170269591088dece07c3277eb14d",
+   "block": 24085765,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2191615
+   }
+  },
+  "P2": {
+   "role": "test",
+   "action": "create invite 26 RLS",
+   "hash": "0x8c345fce429b8df8f98137dd61ead98559ced80bf334ad4265bdfba5acc904f7",
+   "block": 24089358,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2257754
+   }
+  },
+  "P3": {
+   "role": "test",
+   "action": "claim invite into fresh account B",
+   "hash": "0xa1b04afb4e236f20b594d6483fe93e8a6437cbe6c9c95890c151742f92319898",
+   "block": 24089920,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 4804,
+    "selector": "0xaacd552c",
+    "log_count": 7,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 1247186
+   }
+  },
+  "P4": {
+   "role": "control",
+   "action": "unshield 1 USDr to A",
+   "hash": "0x7c18d5926c173be0147494714255bcb26e6075d9323c15c8bca77b2a69fb449b",
+   "block": 24086046,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [
+    {
+     "value": "A.address.raw",
+     "where": "input"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log2.topic2"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log3.topic2"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log4.topic1"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "input"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log2.data"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log3.data"
+    }
+   ],
+   "shape": {
+    "input_bytes": 5476,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+      "0xa96e2506",
+      4,
+      32
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "0x0684ec99",
+      4,
+      64
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2242095
+   }
+  }
+ },
+ "shape_reference": "P1",
+ "shape_differences": {
+  "P1": [],
+  "P2": [
+   "events"
+  ],
+  "P3": [
+   "selector",
+   "input_bytes",
+   "log_count",
+   "events"
+  ]
+ },
+ "h4_baseline_sends": [
+  "X1",
+  "X2",
+  "X3"
+ ],
+ "h4_repeated_public_constants": {
+  "00000000000000000000000097b5d78dbe06d8c8c843f87b5aa2d8587b890795": [
+   "P1",
+   "P2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000001": [
+   "P1",
+   "P2",
+   "P3"
+  ]
+ },
+ "h4_repeated_words_not_in_baseline": {},
+ "failures": [
+  "H3 P2 differs from P1 in ['events']",
+  "H3 P3 differs from P1 in ['selector', 'input_bytes', 'log_count', 'events']"
+ ]
+}

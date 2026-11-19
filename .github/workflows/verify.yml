@@ -1,0 +1,21 @@
+name: verify
+on: [push, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pilot, offline integrity checks
+        run: python scripts/footprint.py verify --trials pilot/trials.json --raw pilot/raw
+      - name: Pilot, tamper tests
+        run: FOOTPRINT_DATA=pilot python -m unittest discover -s tests -v
+      - name: Study, offline integrity, scan and tamper tests
+        if: hashFiles('raw/*.json') != ''
+        run: |
+          python scripts/footprint.py check-manifest
+          python scripts/footprint.py verify
+          python scripts/footprint.py scan --out /tmp/rescan
+          python -m unittest discover -s tests -v

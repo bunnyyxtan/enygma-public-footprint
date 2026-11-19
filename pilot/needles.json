@@ -1,0 +1,16 @@
+{
+ "accounts": {
+  "A": {
+   "address": "0xA3F8D9a3aB0FdD00038feacE70843584d3f6D6D2",
+   "username": "notyourbunnyy"
+  },
+  "B": {
+   "address": "0xf87d90603b976b2f2d1a9F7f607CeEe27b5DB0c1",
+   "username": "qa-test"
+  },
+  "C": {
+   "username": "testing",
+   "note": "full address of @testing not recorded during QA, only the username is searched"
+  }
+ }
+}

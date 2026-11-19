@@ -1,0 +1,15 @@
+{
+ "note": "Pilot on transactions made during my 15 to 16 Nov QA session, before this study was designed. Used only to test the scanner, not as study data.",
+ "trials": [
+  {"id": "P0", "action": "shield 1 USDr", "role": "control", "hash": "0xe1677f5cbe344b850556f6f79e27500e85e67efb7e0c2183575fa30a73d584d0", "amount_wei": "1000000000000000000", "expect_visible": ["A.address.raw", "amount.be_min"]},
+  {"id": "P1", "action": "send 1 USDr A to @testing", "role": "test", "hash": "0x5d1d1d95e140bb231a46c8702aaf50393d4d170269591088dece07c3277eb14d", "amount_wei": "1000000000000000000"},
+  {"id": "P2", "action": "create invite 26 RLS", "role": "test", "hash": "0x8c345fce429b8df8f98137dd61ead98559ced80bf334ad4265bdfba5acc904f7", "amount_wei": "26000000000000000000"},
+  {"id": "P3", "action": "claim invite into fresh account B", "role": "test", "hash": "0xa1b04afb4e236f20b594d6483fe93e8a6437cbe6c9c95890c151742f92319898", "amount_wei": "26000000000000000000"},
+  {"id": "P4", "action": "unshield 1 USDr to A", "role": "control", "hash": "0x7c18d5926c173be0147494714255bcb26e6075d9323c15c8bca77b2a69fb449b", "amount_wei": "1000000000000000000", "expect_visible": ["A.address.raw", "amount.be_min"]}
+ ],
+ "baseline": [
+  {"id": "X1", "hash": "0x6d1390834ebdeec67cc2d822108569568f35ff7a6b04788872161c1b30747472"},
+  {"id": "X2", "hash": "0x0c07128bb45a7b36400f40f4b4a10008387f4722489aad17d905ec3045bf89d0"},
+  {"id": "X3", "hash": "0xad205d9cf0d0849c8764b3ecb296c0d551fe5b162c5e6771ff6b8ae04c3dc2b8"}
+ ]
+}
