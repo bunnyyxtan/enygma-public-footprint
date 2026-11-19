@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-19T09:44:08Z",
+ "generated_utc": "2026-11-19T10:01:12Z",
  "trials": {
   "T0": {
    "role": "control",
@@ -622,6 +622,10 @@
  "h4_repeated_public_constants": {},
  "h4_repeated_words_not_in_baseline": {},
  "failures": [],
+ "h4_without_baseline": {
+  "shared_words": 17,
+  "public_constants": 17
+ },
  "posthoc_amendment_3": {
   "P1_other_explorer_tabs": {
    "hits": {

@@ -299,6 +299,11 @@ def scan(trials, needles, raw_dir, out_dir):
                "h4_baseline_sends": [b["id"] for b in trials.get("baseline", [])],
                "h4_repeated_public_constants": constants,
                "h4_repeated_words_not_in_baseline": repeated, "failures": failures,
+               # The same count with no baseline at all: every shared word, and how many are public constants.
+               "h4_without_baseline": {
+                   "shared_words": sum(1 for ids in counts.values() if len(ids) >= 2),
+                   "public_constants": sum(1 for w, ids in counts.items() if len(ids) >= 2 and constant(w)),
+               },
                "posthoc_amendment_3": posthoc}
     Path(out_dir, "scan.json").write_text(json.dumps(summary, indent=1))
     for tid, x in res.items():
