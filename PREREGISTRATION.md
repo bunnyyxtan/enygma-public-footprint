@@ -83,3 +83,12 @@ Account A was created and funded. The faucet turned out to give 5 USDr and 50 RL
 - The spend and view public keys used as search values are read from each account's public registration event with `footprint.py keys`. Registration is public by design (the app says so), so those keys showing up in the registration is expected. The question is whether they show up in a payment.
 - The view key is 1184 bytes, so besides the full key the scanner also searches its first and last 32 bytes.
 - The setup transactions (faucet, registration) are listed in `trials.json` under `setup`.
+
+### Amendment 2, 19 Nov 2026, after T2 and before T3
+
+A change to how H4 cuts the transaction input into 32 byte words. It was found when T1 and T2 were scanned before any baseline sends had been picked, and it is logged here because it changes the analysis after seeing data.
+
+- Every send is a Multicall3 `aggregate3` call holding two inner calls (3424 bytes each in T1 and T2). Cutting the outer input every 32 bytes put the inner calls 4 bytes off, so ABI offsets and selectors showed up as fake unique words. The script now unpacks `aggregate3` and cuts each inner call after its own selector.
+- Event signature hashes (topic 0 of a log) are now counted as public constants, alongside small numbers and emitting contract addresses. They are the same for every user of the contract.
+- Nothing else changed. H1 to H3 and H5 are untouched. The tamper tests still pass, including the planted repeated tag.
+- With the change, T1 and T2 share no word outside public constants, before any baseline is applied. The scan output from before the change is kept in git history (commit with message "T0, S1, T1, T2 collected and scanned").

@@ -207,11 +207,30 @@ def shape(r):
     }
 
 
+AGGREGATE3 = bytes.fromhex("82ad56cb")  # Multicall3 aggregate3((address,bool,bytes)[])
+
+
+def calls(inp):
+    """Call bodies (selector stripped). A Multicall3 aggregate3 is unpacked into its inner calls,
+    so their ABI words line up on 32 byte boundaries."""
+    if inp[:4] != AGGREGATE3:
+        return [inp[4:]]
+    body = inp[4:]
+    u = lambda o: int.from_bytes(body[o:o + 32], "big")
+    arr = u(0)
+    out = []
+    for i in range(u(arr)):
+        tup = arr + 32 + u(arr + 32 + 32 * i)  # (target, allowFailure, offset to bytes)
+        b = tup + u(tup + 64)
+        out.append(body[b + 32 + 4:b + 32 + u(b)])
+    return out
+
+
 def words(r):
-    """32 byte words: ABI words of the input after the selector, every topic, and data words."""
+    """32 byte words: ABI words of each call body after its selector, every topic, and data words."""
     out = set()
-    inp = hexbytes(r["tx"]["input"])[4:]
-    out |= {inp[i:i + 32] for i in range(0, len(inp) - 31, 32)}
+    for body in calls(hexbytes(r["tx"]["input"])):
+        out |= {body[i:i + 32] for i in range(0, len(body) - 31, 32)}
     for l in r["receipt"]["logs"]:
         out |= {hexbytes(t) for t in l["topics"]}
         d = hexbytes(l["data"])
@@ -253,12 +272,12 @@ def scan(trials, needles, raw_dir, out_dir):
     for tid in tests:
         for w in words(load(raw_path(tid, "rpc", raw_dir))):
             counts.setdefault(w, []).append(tid)
-    # Public constants are not a sender tag: small integers (ABI offsets, lengths, flags, IDs)
-    # and the address of any contract that emitted a log in these transactions.
-    emitters = {hexbytes(l["address"]).rjust(32, b"\0") for tid in tests
-                for l in load(raw_path(tid, "rpc", raw_dir))["receipt"]["logs"]}
+    # Public constants are not a sender tag: small integers (ABI offsets, lengths, flags, IDs),
+    # the address of any contract that emitted a log here, and event signature hashes (topic 0).
+    logs = [l for tid in tests for l in load(raw_path(tid, "rpc", raw_dir))["receipt"]["logs"]]
+    public = {hexbytes(l["address"]).rjust(32, b"\0") for l in logs} | {hexbytes(l["topics"][0]) for l in logs}
     def constant(w):
-        return int.from_bytes(w, "big") < 2 ** 32 or w in emitters
+        return int.from_bytes(w, "big") < 2 ** 32 or w in public
     shared = {w: ids for w, ids in counts.items() if len(ids) >= 2 and w not in base_words}
     constants = {w.hex(): ids for w, ids in shared.items() if constant(w)}
     repeated = {w.hex(): ids for w, ids in shared.items() if not constant(w)}
