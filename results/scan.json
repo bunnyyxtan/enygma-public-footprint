@@ -1,0 +1,383 @@
+{
+ "generated_utc": "2026-11-19T08:43:21Z",
+ "trials": {
+  "T0": {
+   "role": "control",
+   "action": "A shields 4.9775 USDr (MAX of the 5 USDr faucet balance, 0.25% fee on top)",
+   "hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+   "block": 24502945,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [
+    {
+     "value": "A.address.raw",
+     "where": "input"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log0.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log1.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log2.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log3.topic1"
+    },
+    {
+     "value": "A.address.raw",
+     "where": "log7.topic1"
+    },
+    {
+     "value": "A.spend",
+     "where": "input"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "input"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log2.data"
+    },
+    {
+     "value": "amount.be_min",
+     "where": "log4.data"
+    }
+   ],
+   "shape": {
+    "input_bytes": 2340,
+    "selector": "0xe2076320",
+    "log_count": 8,
+    "events": [
+     [
+      "0x07e17e17e17e17e17e17e17e17e17e17e17e17ea",
+      "0x8c5be1e5",
+      3,
+      32
+     ],
+     [
+      "0x07e17e17e17e17e17e17e17e17e17e17e17e17ea",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0x98de5035",
+      3,
+      0
+     ],
+     [
+      "0x0000000000000000000000000000000000000400",
+      "0xddf252ad",
+      3,
+      32
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+      "0x0684ec99",
+      4,
+      64
+     ]
+    ],
+    "gas_used": 981546
+   }
+  },
+  "T1": {
+   "role": "test",
+   "action": "A sends 1 USDr to B (@qa-test)",
+   "hash": "0xefadf0157bd8fe39c01b62e789ba5908c7d8a081381d8066a7aaefb9e557b1d3",
+   "block": 24503619,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2103973
+   }
+  },
+  "T2": {
+   "role": "test",
+   "action": "A sends 2 USDr to B (@qa-test)",
+   "hash": "0x12a50d2f7777644688bbd080741f95c75ff86c89e66b90b1b60ad5e2a72ac3ea",
+   "block": 24503876,
+   "relayer_sender": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "hits": [],
+   "shape": {
+    "input_bytes": 7300,
+    "selector": "0x82ad56cb",
+    "log_count": 10,
+    "events": [
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x437885c0",
+      4,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x28ec6d3c",
+      3,
+      0
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ],
+     [
+      "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+      "0x3703497a",
+      3,
+      1312
+     ]
+    ],
+    "gas_used": 2103279
+   }
+  }
+ },
+ "shape_reference": "T1",
+ "shape_differences": {
+  "T1": [],
+  "T2": []
+ },
+ "h4_baseline_sends": [],
+ "h4_repeated_public_constants": {
+  "0000000000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000d64": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000440": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000040": [
+   "T1",
+   "T2"
+  ],
+  "00000000000000000000000000000000000000000000000000000000000004a0": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000002": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000020": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000060": [
+   "T1",
+   "T2"
+  ],
+  "000000000000000000000000000000000000000000000000000000000000005c": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000000000000000000000000000000000000000000e40": [
+   "T1",
+   "T2"
+  ],
+  "0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2": [
+   "T1",
+   "T2"
+  ]
+ },
+ "h4_repeated_words_not_in_baseline": {
+  "aacd552c00000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000004000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000000800000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "000002e000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000000200000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4": [
+   "T1",
+   "T2"
+  ],
+  "000004a000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2": [
+   "T1",
+   "T2"
+  ],
+  "000000c000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000006000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000000100000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "0000016000000000000000000000000000000000000000000000000000000000": [
+   "T1",
+   "T2"
+  ],
+  "437885c05eacc89ce854c46fbeb8290d4c624ea6b561c7a784d86bb5369b2ea3": [
+   "T1",
+   "T2"
+  ]
+ },
+ "failures": [
+  "H4 word aacd552c00000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000004000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000000800000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 000002e000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000000200000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 000004a000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 000000c000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000006000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000000100000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 0000016000000000000000000000000000000000000000000000000000000000 repeats in ['T1', 'T2'] and is in no baseline send",
+  "H4 word 437885c05eacc89ce854c46fbeb8290d4c624ea6b561c7a784d86bb5369b2ea3 repeats in ['T1', 'T2'] and is in no baseline send"
+ ]
+}

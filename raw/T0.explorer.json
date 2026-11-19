@@ -1,0 +1,759 @@
+{
+ "tx": {
+  "priority_fee": "0",
+  "raw_input": "0xe207632000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000008a00000000000000000000000000000000000000000000000003638f70edfc90000000000000000000000000000000000000000000000000000000000006afeb6dd000000000000000000000000000000000000000000000000000000000000001c3a7ce3b6de53cd2a118730ae021e8b4585976cffe398170a5a1a823762437b86351313f29a06e8cd2f9889b70b4e09ba674c5b1232a504819ea7034a3c0fad6d0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd10000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c200000000000000000000000000000000000000000000000000000000001133400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000006afeb6dd0000000000000000000000000000000000000000000000003638f70edfc9000000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000006a4b76080b2000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000006200000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006afec2934595ec9a4776eb9507314633b84774e249dd3652f47d4f8a1e61bc78516c561516e7b438822a6d7dbb188a34c13ef380a30a41da3032e6645275da2f2fdd74e300000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000004513a1e0c981c0001b32acaedc6d1432b11651d8c1d62f3b43453fe5a9cc7497479d0ed2fc0d883626a6659ae6d3404d21da9b021f0385da950fa20e0da5722fec821db2c4356bad000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004408702400e215c3a2bfe849fb1b3783dc2a7ddac59d1ba17d22ccf5dcd57e2049daffd550ea8e913a26cd204e18e1f5d68710d52e906a1001507a30d81422ba41384ab53fdfc72811abd7432a3d8aafbcc29bbbb6fee550721f2b2da07332ffc6b9c2e65170ca03ed521b0687efab7907b922bed3b83fbefc85c29af9ceac663608f5c2de219cb67c841f26ece6c743d0274626022bfeaddd1c9cc4e0e6d717702efe26fc6a16fcf06e4fabbbbcbe4690847d2ec3f9ebb398a3f53c61a7f0cdf4f2d0113d091f7c4ddb7e8db6ab1c3f97b2e564863b7ebd3cc1fd5db57da911cf3657ff5bce3a77b3dedffb9474688ec93d1bc707388c8468ba6342b33904c2767b999acfacc9602ffa9a1ec73c536fb46cecbde66d23793e40cf7c27ecd366c380f925fabdfcd932d1c15289481faf1a1967538f9f6e032fe61cff230a861473e9ea1fe851c7b7c7a51619f2bd86dcff47e972e93c125ce20ac25081d16041f71d50ad0afd2c0072ae42409af45aa901ef40507540606220becd1471db550bb93baadec460a80aac093f975c78d459ae40687a50b42f2db65651752953f4ddf47b256bebe34448290f9df91a441c8b23408e46d2aad14e79776c79374c1189206af427e0cf38d2055088205ffefede33b63c4e266f78470c02a867cce4f6ddae9f4170c9b20865fae5b302882eac29d3b21fe04a2bc9da6b4f4e1056149c6e691931c97d340f42c742e9cb52fdb5387fbefd7d817c76a6fdd62b0d6fb9eb2e2d5067b8d0a249d71cc98118a2f2f90d2d78d547f236a2eae919beed8729e3e3be73e8c251cc1b7e42007a37df8bfb87fbddb7ee2ba60252df419f17d0fedbea52928ae9eee918fead2a6053eea2736a08a910ecd301dbfa2fb4fdc4b5ce2f94b2728e0e6c01c985b183ec582bccd6e06ad3a2228d207c9220f8d9d7e4484b97457cfa9b0a08f57d3ab4d7e27c48cc84957f05eb3941fbae03adb43fd39fbb930133d0da29101f70e79d24233d81dc57458cd8506eac22b1f62d202574b0e5331627875e7e4f00d26970c7e74e66b16bf5c4c7ce1378bb8d24011fc79e3c4822007066248f46311ecf5a4c8a7ce683379e50da01588c3a14d8452739979c81681863e68a5763a273097425235582c512026f2d050283302c9a0edee19f45f47e180ada44c779bb587751ef000e6d71640e97002e5e9a88859cd65ab6ed4f087f41eadb4f2b21aeec6af11ce5198e86c7ca5efe1e7d779f3e11e5340336566be6e56abda31672acc9e4b3a3d52b97630ca7b911e58c967ed22636a0288be78cbc84e94f5d59937905dd5b3f19dc10f33a07e814d7c95f3e2bb081074376802e30d7324d52302ce038f6b990a23acde4b8ef94bc0a71868cfd0634a5074f2515d8cb7409d0977cc9cad7510352233042bfad432e26c9783a6b0c187958549fcb3e9a9a2c0cf76eef64cfa5d1b453e52a19fb843a00ad5a9b23d51710fce545d189bbe4e9dab5c654aa91fe2891a36f58fe81baed79c85e773bb90617cb4228b704ad6000000000000000000000000000000000000000000000000000000000000005cc18db840c5b04caf546ba02c52a6cf3951248d657f8d973a500bec850007c058c62427cfa1f38452389f021d15f0fd8cb16786c85e243090ddeeb0914d769fd51018a8d9b42c2d41d9a687839e4053f20d15d8ed00939c5f2bbe7c40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000413565598c5e19b96ea5c077f2d465593e8bc1b2c697f8fc49a5a5b8098318867e480de76baffc22cd92d2afa4cd70ca17f98a7663ad1ab097587e9235385166681c00000000000000000000000000000000000000000000000000000000000000",
+  "is_pending_update": false,
+  "result": "success",
+  "hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+  "max_fee_per_gas": "57600000000",
+  "revert_reason": null,
+  "confirmation_duration": [
+   0,
+   556.0
+  ],
+  "transaction_burnt_fee": "47114208000000000",
+  "type": 2,
+  "token_transfers_overflow": false,
+  "confirmations": 976,
+  "position": 0,
+  "max_priority_fee_per_gas": "0",
+  "transaction_tag": null,
+  "created_contract": null,
+  "value": "0",
+  "from": {
+   "ens_domain_name": null,
+   "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+   "implementations": [],
+   "is_contract": false,
+   "is_scam": false,
+   "is_verified": false,
+   "metadata": null,
+   "name": null,
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "gas_used": "981546",
+  "status": "ok",
+  "to": {
+   "ens_domain_name": null,
+   "hash": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+   "implementations": [],
+   "is_contract": true,
+   "is_scam": false,
+   "is_verified": true,
+   "metadata": null,
+   "name": "RlsGasForwarder",
+   "private_tags": [],
+   "proxy_type": null,
+   "public_tags": [],
+   "reputation": "ok",
+   "watchlist_names": []
+  },
+  "authorization_list": [],
+  "method": "execute",
+  "fee": {
+   "type": "actual",
+   "value": "47114208000000000"
+  },
+  "gas_limit": "1037864",
+  "gas_price": "48000000000",
+  "decoded_input": {
+   "method_call": "execute((address,address,uint256,uint256,uint256,uint256,bytes) req, bytes signature, (uint256,uint256,uint8,bytes32,bytes32) permit)",
+   "method_id": "e2076320",
+   "parameters": [
+    {
+     "name": "req",
+     "type": "(address,address,uint256,uint256,uint256,uint256,bytes)",
+     "value": [
+      "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+      "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+      "1127232",
+      "1",
+      "1795077853",
+      "3907144320000000000",
+      "0xb76080b2000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000006200000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006afec2934595ec9a4776eb9507314633b84774e249dd3652f47d4f8a1e61bc78516c561516e7b438822a6d7dbb188a34c13ef380a30a41da3032e6645275da2f2fdd74e300000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000004513a1e0c981c0001b32acaedc6d1432b11651d8c1d62f3b43453fe5a9cc7497479d0ed2fc0d883626a6659ae6d3404d21da9b021f0385da950fa20e0da5722fec821db2c4356bad000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004408702400e215c3a2bfe849fb1b3783dc2a7ddac59d1ba17d22ccf5dcd57e2049daffd550ea8e913a26cd204e18e1f5d68710d52e906a1001507a30d81422ba41384ab53fdfc72811abd7432a3d8aafbcc29bbbb6fee550721f2b2da07332ffc6b9c2e65170ca03ed521b0687efab7907b922bed3b83fbefc85c29af9ceac663608f5c2de219cb67c841f26ece6c743d0274626022bfeaddd1c9cc4e0e6d717702efe26fc6a16fcf06e4fabbbbcbe4690847d2ec3f9ebb398a3f53c61a7f0cdf4f2d0113d091f7c4ddb7e8db6ab1c3f97b2e564863b7ebd3cc1fd5db57da911cf3657ff5bce3a77b3dedffb9474688ec93d1bc707388c8468ba6342b33904c2767b999acfacc9602ffa9a1ec73c536fb46cecbde66d23793e40cf7c27ecd366c380f925fabdfcd932d1c15289481faf1a1967538f9f6e032fe61cff230a861473e9ea1fe851c7b7c7a51619f2bd86dcff47e972e93c125ce20ac25081d16041f71d50ad0afd2c0072ae42409af45aa901ef40507540606220becd1471db550bb93baadec460a80aac093f975c78d459ae40687a50b42f2db65651752953f4ddf47b256bebe34448290f9df91a441c8b23408e46d2aad14e79776c79374c1189206af427e0cf38d2055088205ffefede33b63c4e266f78470c02a867cce4f6ddae9f4170c9b20865fae5b302882eac29d3b21fe04a2bc9da6b4f4e1056149c6e691931c97d340f42c742e9cb52fdb5387fbefd7d817c76a6fdd62b0d6fb9eb2e2d5067b8d0a249d71cc98118a2f2f90d2d78d547f236a2eae919beed8729e3e3be73e8c251cc1b7e42007a37df8bfb87fbddb7ee2ba60252df419f17d0fedbea52928ae9eee918fead2a6053eea2736a08a910ecd301dbfa2fb4fdc4b5ce2f94b2728e0e6c01c985b183ec582bccd6e06ad3a2228d207c9220f8d9d7e4484b97457cfa9b0a08f57d3ab4d7e27c48cc84957f05eb3941fbae03adb43fd39fbb930133d0da29101f70e79d24233d81dc57458cd8506eac22b1f62d202574b0e5331627875e7e4f00d26970c7e74e66b16bf5c4c7ce1378bb8d24011fc79e3c4822007066248f46311ecf5a4c8a7ce683379e50da01588c3a14d8452739979c81681863e68a5763a273097425235582c512026f2d050283302c9a0edee19f45f47e180ada44c779bb587751ef000e6d71640e97002e5e9a88859cd65ab6ed4f087f41eadb4f2b21aeec6af11ce5198e86c7ca5efe1e7d779f3e11e5340336566be6e56abda31672acc9e4b3a3d52b97630ca7b911e58c967ed22636a0288be78cbc84e94f5d59937905dd5b3f19dc10f33a07e814d7c95f3e2bb081074376802e30d7324d52302ce038f6b990a23acde4b8ef94bc0a71868cfd0634a5074f2515d8cb7409d0977cc9cad7510352233042bfad432e26c9783a6b0c187958549fcb3e9a9a2c0cf76eef64cfa5d1b453e52a19fb843a00ad5a9b23d51710fce545d189bbe4e9dab5c654aa91fe2891a36f58fe81baed79c85e773bb90617cb4228b704ad6000000000000000000000000000000000000000000000000000000000000005cc18db840c5b04caf546ba02c52a6cf3951248d657f8d973a500bec850007c058c62427cfa1f38452389f021d15f0fd8cb16786c85e243090ddeeb0914d769fd51018a8d9b42c2d41d9a687839e4053f20d15d8ed00939c5f2bbe7c4000000000"
+     ]
+    },
+    {
+     "name": "signature",
+     "type": "bytes",
+     "value": "0x3565598c5e19b96ea5c077f2d465593e8bc1b2c697f8fc49a5a5b8098318867e480de76baffc22cd92d2afa4cd70ca17f98a7663ad1ab097587e9235385166681c"
+    },
+    {
+     "name": "permit",
+     "type": "(uint256,uint256,uint8,bytes32,bytes32)",
+     "value": [
+      "3907144320000000000",
+      "1795077853",
+      "28",
+      "0x3a7ce3b6de53cd2a118730ae021e8b4585976cffe398170a5a1a823762437b86",
+      "0x351313f29a06e8cd2f9889b70b4e09ba674c5b1232a504819ea7034a3c0fad6d"
+     ]
+    }
+   ]
+  },
+  "fhe_operations_count": 0,
+  "token_transfers": [
+   {
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "from": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "log_index": 1,
+    "method": null,
+    "timestamp": null,
+    "to": {
+     "ens_domain_name": null,
+     "hash": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "token": {
+     "address_hash": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "264",
+     "icon_url": null,
+     "name": "Rayls",
+     "reputation": "ok",
+     "symbol": "RLS",
+     "total_supply": "1000998352693993000000000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_type": "ERC-20",
+    "total": {
+     "decimals": "18",
+     "value": "3907144320000000000"
+    },
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+    "type": "token_transfer"
+   },
+   {
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "from": {
+     "ens_domain_name": null,
+     "hash": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "log_index": 2,
+    "method": null,
+    "timestamp": null,
+    "to": {
+     "ens_domain_name": null,
+     "hash": "0x8dE3F34b867930a26dbd046cb31337e1a7fE078C",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_type": "ERC-20",
+    "total": {
+     "decimals": "18",
+     "value": "4977500000000000000"
+    },
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+    "type": "token_transfer"
+   },
+   {
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "from": {
+     "ens_domain_name": null,
+     "hash": "0x8dE3F34b867930a26dbd046cb31337e1a7fE078C",
+     "implementations": [],
+     "is_contract": false,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": null,
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "log_index": 4,
+    "method": null,
+    "timestamp": null,
+    "to": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "token": {
+     "address_hash": "0x0000000000000000000000000000000000000400",
+     "circulating_market_cap": null,
+     "circulating_supply": null,
+     "decimals": "18",
+     "exchange_rate": null,
+     "holders_count": "1981",
+     "icon_url": null,
+     "name": "USD Rayls",
+     "reputation": "ok",
+     "symbol": "USDr",
+     "total_supply": "159658587663000002000000",
+     "type": "ERC-20",
+     "volume_24h": null
+    },
+    "token_type": "ERC-20",
+    "total": {
+     "decimals": "18",
+     "value": "4977500000000000000"
+    },
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+    "type": "token_transfer"
+   }
+  ],
+  "base_fee_per_gas": "48000000000",
+  "timestamp": "2026-11-19T08:34:15.000000Z",
+  "nonce": 3792,
+  "historic_exchange_rate": null,
+  "transaction_types": [
+   "contract_call",
+   "token_transfer"
+  ],
+  "exchange_rate": null,
+  "block_number": 24502945,
+  "has_error_in_internal_transactions": null
+ },
+ "logs": {
+  "items": [
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+     "implementations": [
+      {
+       "address_hash": "0x07E17E17E17E17E17e17E17E17E17E17E17e17eb",
+       "name": null
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "ERC1967Proxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000003638f70edfc90000",
+    "decoded": {
+     "method_call": "Approval(address indexed owner, address indexed spender, uint256 value)",
+     "method_id": "8c5be1e5",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "owner",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "spender",
+       "type": "address",
+       "value": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "3907144320000000000"
+      }
+     ]
+    },
+    "index": 0,
+    "smart_contract": null,
+    "topics": [
+     "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x00000000000000000000000012b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x07e17E17e17E17e17e17e17E17E17E17E17e17EA",
+     "implementations": [
+      {
+       "address_hash": "0x07E17E17E17E17E17e17E17E17E17E17E17e17eb",
+       "name": null
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "ERC1967Proxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000003638f70edfc90000",
+    "decoded": {
+     "method_call": "Transfer(address indexed from, address indexed to, uint256 value)",
+     "method_id": "ddf252ad",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "3907144320000000000"
+      }
+     ]
+    },
+    "index": 1,
+    "smart_contract": null,
+    "topics": [
+     "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x000000000000000000000000a5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x0000000000000000000000000000000000000400",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": "USD Rayls",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000004513a1e0c981c000",
+    "decoded": {
+     "method_call": "Transfer(address indexed from, address indexed to, uint256 value)",
+     "method_id": "ddf252ad",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x8dE3F34b867930a26dbd046cb31337e1a7fE078C"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "4977500000000000000"
+      }
+     ]
+    },
+    "index": 2,
+    "smart_contract": null,
+    "topics": [
+     "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x0000000000000000000000008de3f34b867930a26dbd046cb31337e1a7fe078c",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x0000000000000000000000000000000000000400",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": "USD Rayls",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "AuthorizationUsed(address indexed authorizer, bytes32 indexed nonce)",
+     "method_id": "98de5035",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "authorizer",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "nonce",
+       "type": "bytes32",
+       "value": "0xaeb6a737affe25f677be43f9ddb8934723c01280e5522de1855b2a5ba423f3ec"
+      }
+     ]
+    },
+    "index": 3,
+    "smart_contract": null,
+    "topics": [
+     "0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0xaeb6a737affe25f677be43f9ddb8934723c01280e5522de1855b2a5ba423f3ec",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x0000000000000000000000000000000000000400",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": false,
+     "metadata": null,
+     "name": "USD Rayls",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000004513a1e0c981c000",
+    "decoded": {
+     "method_call": "Transfer(address indexed from, address indexed to, uint256 value)",
+     "method_id": "ddf252ad",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x8dE3F34b867930a26dbd046cb31337e1a7fE078C"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2"
+      },
+      {
+       "indexed": false,
+       "name": "value",
+       "type": "uint256",
+       "value": "4977500000000000000"
+      }
+     ]
+    },
+    "index": 4,
+    "smart_contract": null,
+    "topics": [
+     "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+     "0x0000000000000000000000008de3f34b867930a26dbd046cb31337e1a7fe078c",
+     "0x0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x",
+    "decoded": {
+     "method_call": "Commitment(uint256 indexed vaultId, uint256 indexed commitment)",
+     "method_id": "28ec6d3c",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "15344133100991414204925921893913048092911227925235928831930969507551277639429"
+      }
+     ]
+    },
+    "index": 5,
+    "smart_contract": null,
+    "topics": [
+     "0x28ec6d3cf0e771d5a8b44b29744de77a87c1301f68127019d5049968253913b4",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x21ec78b8c06b5abddb9c212203119cd6c011a43a81f74826bbf9a676cb9e6705",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2",
+     "implementations": [
+      {
+       "address_hash": "0xAd9667049f14D1757D147F652c41Dc241C57091C",
+       "name": "SharedVault"
+      }
+     ],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "SharedVaultProxy",
+     "private_tags": [],
+     "proxy_type": "eip1967",
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000004a000000000000000000000000000000000000000000000000000000000000004408702400e215c3a2bfe849fb1b3783dc2a7ddac59d1ba17d22ccf5dcd57e2049daffd550ea8e913a26cd204e18e1f5d68710d52e906a1001507a30d81422ba41384ab53fdfc72811abd7432a3d8aafbcc29bbbb6fee550721f2b2da07332ffc6b9c2e65170ca03ed521b0687efab7907b922bed3b83fbefc85c29af9ceac663608f5c2de219cb67c841f26ece6c743d0274626022bfeaddd1c9cc4e0e6d717702efe26fc6a16fcf06e4fabbbbcbe4690847d2ec3f9ebb398a3f53c61a7f0cdf4f2d0113d091f7c4ddb7e8db6ab1c3f97b2e564863b7ebd3cc1fd5db57da911cf3657ff5bce3a77b3dedffb9474688ec93d1bc707388c8468ba6342b33904c2767b999acfacc9602ffa9a1ec73c536fb46cecbde66d23793e40cf7c27ecd366c380f925fabdfcd932d1c15289481faf1a1967538f9f6e032fe61cff230a861473e9ea1fe851c7b7c7a51619f2bd86dcff47e972e93c125ce20ac25081d16041f71d50ad0afd2c0072ae42409af45aa901ef40507540606220becd1471db550bb93baadec460a80aac093f975c78d459ae40687a50b42f2db65651752953f4ddf47b256bebe34448290f9df91a441c8b23408e46d2aad14e79776c79374c1189206af427e0cf38d2055088205ffefede33b63c4e266f78470c02a867cce4f6ddae9f4170c9b20865fae5b302882eac29d3b21fe04a2bc9da6b4f4e1056149c6e691931c97d340f42c742e9cb52fdb5387fbefd7d817c76a6fdd62b0d6fb9eb2e2d5067b8d0a249d71cc98118a2f2f90d2d78d547f236a2eae919beed8729e3e3be73e8c251cc1b7e42007a37df8bfb87fbddb7ee2ba60252df419f17d0fedbea52928ae9eee918fead2a6053eea2736a08a910ecd301dbfa2fb4fdc4b5ce2f94b2728e0e6c01c985b183ec582bccd6e06ad3a2228d207c9220f8d9d7e4484b97457cfa9b0a08f57d3ab4d7e27c48cc84957f05eb3941fbae03adb43fd39fbb930133d0da29101f70e79d24233d81dc57458cd8506eac22b1f62d202574b0e5331627875e7e4f00d26970c7e74e66b16bf5c4c7ce1378bb8d24011fc79e3c4822007066248f46311ecf5a4c8a7ce683379e50da01588c3a14d8452739979c81681863e68a5763a273097425235582c512026f2d050283302c9a0edee19f45f47e180ada44c779bb587751ef000e6d71640e97002e5e9a88859cd65ab6ed4f087f41eadb4f2b21aeec6af11ce5198e86c7ca5efe1e7d779f3e11e5340336566be6e56abda31672acc9e4b3a3d52b97630ca7b911e58c967ed22636a0288be78cbc84e94f5d59937905dd5b3f19dc10f33a07e814d7c95f3e2bb081074376802e30d7324d52302ce038f6b990a23acde4b8ef94bc0a71868cfd0634a5074f2515d8cb7409d0977cc9cad7510352233042bfad432e26c9783a6b0c187958549fcb3e9a9a2c0cf76eef64cfa5d1b453e52a19fb843a00ad5a9b23d51710fce545d189bbe4e9dab5c654aa91fe2891a36f58fe81baed79c85e773bb90617cb4228b704ad6000000000000000000000000000000000000000000000000000000000000005cc18db840c5b04caf546ba02c52a6cf3951248d657f8d973a500bec850007c058c62427cfa1f38452389f021d15f0fd8cb16786c85e243090ddeeb0914d769fd51018a8d9b42c2d41d9a687839e4053f20d15d8ed00939c5f2bbe7c4000000000",
+    "decoded": {
+     "method_call": "EncryptedNote(uint256 indexed vaultId, uint256 indexed commitment, bytes ciphertextI, bytes ciphertextII)",
+     "method_id": "3703497a",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "vaultId",
+       "type": "uint256",
+       "value": "2"
+      },
+      {
+       "indexed": true,
+       "name": "commitment",
+       "type": "uint256",
+       "value": "15344133100991414204925921893913048092911227925235928831930969507551277639429"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextI",
+       "type": "bytes",
+       "value": "0x8702400e215c3a2bfe849fb1b3783dc2a7ddac59d1ba17d22ccf5dcd57e2049daffd550ea8e913a26cd204e18e1f5d68710d52e906a1001507a30d81422ba41384ab53fdfc72811abd7432a3d8aafbcc29bbbb6fee550721f2b2da07332ffc6b9c2e65170ca03ed521b0687efab7907b922bed3b83fbefc85c29af9ceac663608f5c2de219cb67c841f26ece6c743d0274626022bfeaddd1c9cc4e0e6d717702efe26fc6a16fcf06e4fabbbbcbe4690847d2ec3f9ebb398a3f53c61a7f0cdf4f2d0113d091f7c4ddb7e8db6ab1c3f97b2e564863b7ebd3cc1fd5db57da911cf3657ff5bce3a77b3dedffb9474688ec93d1bc707388c8468ba6342b33904c2767b999acfacc9602ffa9a1ec73c536fb46cecbde66d23793e40cf7c27ecd366c380f925fabdfcd932d1c15289481faf1a1967538f9f6e032fe61cff230a861473e9ea1fe851c7b7c7a51619f2bd86dcff47e972e93c125ce20ac25081d16041f71d50ad0afd2c0072ae42409af45aa901ef40507540606220becd1471db550bb93baadec460a80aac093f975c78d459ae40687a50b42f2db65651752953f4ddf47b256bebe34448290f9df91a441c8b23408e46d2aad14e79776c79374c1189206af427e0cf38d2055088205ffefede33b63c4e266f78470c02a867cce4f6ddae9f4170c9b20865fae5b302882eac29d3b21fe04a2bc9da6b4f4e1056149c6e691931c97d340f42c742e9cb52fdb5387fbefd7d817c76a6fdd62b0d6fb9eb2e2d5067b8d0a249d71cc98118a2f2f90d2d78d547f236a2eae919beed8729e3e3be73e8c251cc1b7e42007a37df8bfb87fbddb7ee2ba60252df419f17d0fedbea52928ae9eee918fead2a6053eea2736a08a910ecd301dbfa2fb4fdc4b5ce2f94b2728e0e6c01c985b183ec582bccd6e06ad3a2228d207c9220f8d9d7e4484b97457cfa9b0a08f57d3ab4d7e27c48cc84957f05eb3941fbae03adb43fd39fbb930133d0da29101f70e79d24233d81dc57458cd8506eac22b1f62d202574b0e5331627875e7e4f00d26970c7e74e66b16bf5c4c7ce1378bb8d24011fc79e3c4822007066248f46311ecf5a4c8a7ce683379e50da01588c3a14d8452739979c81681863e68a5763a273097425235582c512026f2d050283302c9a0edee19f45f47e180ada44c779bb587751ef000e6d71640e97002e5e9a88859cd65ab6ed4f087f41eadb4f2b21aeec6af11ce5198e86c7ca5efe1e7d779f3e11e5340336566be6e56abda31672acc9e4b3a3d52b97630ca7b911e58c967ed22636a0288be78cbc84e94f5d59937905dd5b3f19dc10f33a07e814d7c95f3e2bb081074376802e30d7324d52302ce038f6b990a23acde4b8ef94bc0a71868cfd0634a5074f2515d8cb7409d0977cc9cad7510352233042bfad432e26c9783a6b0c187958549fcb3e9a9a2c0cf76eef64cfa5d1b453e52a19fb843a00ad5a9b23d51710fce545d189bbe4e9dab5c654aa91fe2891a36f58fe81baed79c85e773bb90617cb4228b704ad6"
+      },
+      {
+       "indexed": false,
+       "name": "ciphertextII",
+       "type": "bytes",
+       "value": "0xc18db840c5b04caf546ba02c52a6cf3951248d657f8d973a500bec850007c058c62427cfa1f38452389f021d15f0fd8cb16786c85e243090ddeeb0914d769fd51018a8d9b42c2d41d9a687839e4053f20d15d8ed00939c5f2bbe7c40"
+      }
+     ]
+    },
+    "index": 6,
+    "smart_contract": null,
+    "topics": [
+     "0x3703497aa5a04538e087fdf04a8711f50aa786fc6bc4bf911fc5ef5459ac34b2",
+     "0x0000000000000000000000000000000000000000000000000000000000000002",
+     "0x21ec78b8c06b5abddb9c212203119cd6c011a43a81f74826bbf9a676cb9e6705",
+     null
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   },
+   {
+    "address": {
+     "ens_domain_name": null,
+     "hash": "0x12B6640048DEB2e8fFDa4Bc10Bb2a640B70eCA6d",
+     "implementations": [],
+     "is_contract": true,
+     "is_scam": false,
+     "is_verified": true,
+     "metadata": null,
+     "name": "RlsGasForwarder",
+     "private_tags": [],
+     "proxy_type": null,
+     "public_tags": [],
+     "reputation": "ok",
+     "watchlist_names": []
+    },
+    "block_hash": "0x3f84f3be2407db2f628b38d3de262bcb793209888aabcf55261d31e084629ef9",
+    "block_number": 24502945,
+    "block_timestamp": "2026-11-19T08:34:15.000000Z",
+    "data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000003638f70edfc90000",
+    "decoded": {
+     "method_call": "Relayed(address indexed from, address indexed to, uint256 nonce, address indexed relayer, uint256 fee)",
+     "method_id": "0684ec99",
+     "parameters": [
+      {
+       "indexed": true,
+       "name": "from",
+       "type": "address",
+       "value": "0x7a1Be2784a77F47FE52989dC8BC65Df3B52babd1"
+      },
+      {
+       "indexed": true,
+       "name": "to",
+       "type": "address",
+       "value": "0x9C5Ad5e5Ea5b5910E7fD1E1CC7b70ce0e4bF06c2"
+      },
+      {
+       "indexed": false,
+       "name": "nonce",
+       "type": "uint256",
+       "value": "1"
+      },
+      {
+       "indexed": true,
+       "name": "relayer",
+       "type": "address",
+       "value": "0xa5f0C684EB49866a9f62f901Cd85f98a19DA0Ac8"
+      },
+      {
+       "indexed": false,
+       "name": "fee",
+       "type": "uint256",
+       "value": "3907144320000000000"
+      }
+     ]
+    },
+    "index": 7,
+    "smart_contract": null,
+    "topics": [
+     "0x0684ec99c5a024d68812ca8b1a1fc50eb479a6b72828732541183a0a28be4a41",
+     "0x0000000000000000000000007a1be2784a77f47fe52989dc8bc65df3b52babd1",
+     "0x0000000000000000000000009c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+     "0x000000000000000000000000a5f0c684eb49866a9f62f901cd85f98a19da0ac8"
+    ],
+    "transaction_hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab"
+   }
+  ],
+  "next_page_params": null
+ },
+ "retrieved_utc": "2026-11-19T08:43:14Z"
+}

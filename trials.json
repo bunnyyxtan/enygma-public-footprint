@@ -1,9 +1,55 @@
 {
  "setup": [
-  {"id": "S-faucet-rls", "hash": "0x3473cb29b6db4806090391864ebee0b7fde7d9c6da1df926ec8f5820e65c57e0", "note": "public faucet, 50 RLS to A"},
-  {"id": "S-faucet-usdr", "hash": "0xa0d444ea1d18c54eeab2ec298b910a5b1c435d0d22479e0d3deb3e3373d3f1ae", "note": "public faucet, 5 USDr to A"},
-  {"id": "S-register", "hash": "0x54f323ac9352297b1c7c1e92aafe816f51271331df225c356a8ac8607d7414ee", "note": "A registers keys and username"}
+  {
+   "id": "S-faucet-rls",
+   "hash": "0x3473cb29b6db4806090391864ebee0b7fde7d9c6da1df926ec8f5820e65c57e0",
+   "note": "public faucet, 50 RLS to A"
+  },
+  {
+   "id": "S-faucet-usdr",
+   "hash": "0xa0d444ea1d18c54eeab2ec298b910a5b1c435d0d22479e0d3deb3e3373d3f1ae",
+   "note": "public faucet, 5 USDr to A"
+  },
+  {
+   "id": "S-register",
+   "hash": "0x54f323ac9352297b1c7c1e92aafe816f51271331df225c356a8ac8607d7414ee",
+   "note": "A registers keys and username"
+  },
+  {
+   "id": "S1",
+   "hash": "0xe3ccb25b307d8428622c4f0791c31dcd30647b6f349cafbf0915d41ec9abd153",
+   "note": "A shields 30 RLS to pay gas for private actions"
+  }
  ],
- "trials": [],
+ "trials": [
+  {
+   "id": "T0",
+   "action": "A shields 4.9775 USDr (MAX of the 5 USDr faucet balance, 0.25% fee on top)",
+   "role": "control",
+   "hash": "0xf59f8133bf806b52a2b9ee40951e95acec185df8d94356a9b1d47f56576eeeab",
+   "amount_wei": "4977500000000000000",
+   "expect_visible": [
+    "A.address.raw",
+    "amount.be_min"
+   ],
+   "time_utc": "2026-11-19 ~08:40"
+  },
+  {
+   "id": "T1",
+   "action": "A sends 1 USDr to B (@qa-test)",
+   "role": "test",
+   "hash": "0xefadf0157bd8fe39c01b62e789ba5908c7d8a081381d8066a7aaefb9e557b1d3",
+   "amount_wei": "1000000000000000000",
+   "app_reported": "proof 256 bytes, made in 2.0 s, gas 8.28 RLS from shielded RLS"
+  },
+  {
+   "id": "T2",
+   "action": "A sends 2 USDr to B (@qa-test)",
+   "role": "test",
+   "hash": "0x12a50d2f7777644688bbd080741f95c75ff86c89e66b90b1b60ad5e2a72ac3ea",
+   "amount_wei": "2000000000000000000",
+   "app_reported": "proof 256 bytes, made in 1.9 s, gas 8.28 RLS from shielded RLS"
+  }
+ ],
  "baseline": []
 }
