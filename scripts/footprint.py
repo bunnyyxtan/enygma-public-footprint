@@ -1,6 +1,7 @@
 """Enygma Public onchain footprint study. Standard library only.
 
   python scripts/footprint.py collect  [--trials trials.json]   fetch raw RPC + explorer data into raw/
+  python scripts/footprint.py keys                              fill public keys in needles.json from the registry
   python scripts/footprint.py verify   [--trials trials.json]   integrity checks on raw/ (no network)
   python scripts/footprint.py scan     [--trials trials.json]   H1 to H4, writes results/
   python scripts/footprint.py manifest                          write MANIFEST.sha256
@@ -64,6 +65,35 @@ def collect(trials, raw_dir):
         exp["retrieved_utc"] = stamp
         raw_path(t["id"], "explorer", raw_dir).write_text(json.dumps(exp, indent=1))
         print(f"{t['id']}: block {int(tx['blockNumber'], 16)} saved")
+
+
+# ---------------------------------------------------------------- keys
+
+REGISTRY = "0xA473291FFb33e2276F364fAE169f03c4406719e9"
+# UserRegistered(address indexed user, uint256 pkSpend, bytes pkView, bytes mlKemAuditCt, bytes aesAuditCt)
+USER_REGISTERED = "0x1a474a7a358619487a8219a6591e6747ed1ea6861a357f234398140f80e7c3fb"
+
+
+def fetch_keys(needles, path, oldest=23_950_000, step=100_000):
+    """Fill spend and view public keys for each account from its public registration event."""
+    head = int(rpc("eth_blockNumber", []), 16)
+    for name, acct in needles["accounts"].items():
+        topic = "0x" + acct["address"][2:].lower().rjust(64, "0")
+        logs, to = [], head
+        while to > oldest and not logs:
+            logs = rpc("eth_getLogs", [{"address": REGISTRY, "topics": [USER_REGISTERED, topic],
+                                        "fromBlock": hex(to - step + 1), "toBlock": hex(to)}])
+            to -= step
+        if not logs:
+            print(f"{name}: no registration found")
+            continue
+        d = hexbytes(logs[-1]["data"])
+        off = int.from_bytes(d[32:64], "big")
+        n = int.from_bytes(d[off:off + 32], "big")
+        acct.update(spend="0x" + d[:32].hex(), view="0x" + d[off + 32:off + 32 + n].hex(),
+                    registration_tx=logs[-1]["transactionHash"], registration_block=int(logs[-1]["blockNumber"], 16))
+        print(f"{name}: spend {acct['spend'][:12]}..., view {n} bytes, from {acct['registration_tx']}")
+    Path(path).write_text(json.dumps(needles, indent=1))
 
 
 # ---------------------------------------------------------------- verify
@@ -150,6 +180,10 @@ def account_forms(name, acct):
             f[f"{name}.{k}"] = b
             if len(b) == 33 and b[0] in (2, 3):
                 f[f"{name}.{k}.x"] = b[1:]
+            if len(b) > 64:
+                # a long key (the 1184 byte ML-KEM view key) could leak in pieces, so its ends are searched too
+                f[f"{name}.{k}.first32"] = b[:32]
+                f[f"{name}.{k}.last32"] = b[-32:]
     return f
 
 
@@ -279,6 +313,10 @@ def main(argv):
     raw_dir = ROOT / arg(argv, "--raw", "raw")
     if cmd == "collect":
         collect(load(trials), raw_dir)
+        return 0
+    if cmd == "keys":
+        npath = ROOT / arg(argv, "--needles", "needles.json")
+        fetch_keys(load(npath), npath)
         return 0
     if cmd == "verify":
         return verify(load(trials), raw_dir)

@@ -21,10 +21,10 @@ This file is written and pushed before trial 1. Its commit time on GitHub is the
 
 | ID | Action | Amount | Role |
 |----|--------|--------|------|
-| T0 | A shields USDr from its public balance | 10 USDr | Control, address and amount are public by design |
+| T0 | A shields USDr from its public balance | 10 USDr (5, see amendment 1) | Control, address and amount are public by design |
 | T1 | A sends to B | 1 USDr | Test |
 | T2 | A sends to B | 2 USDr | Test, amount changed only |
-| T3 | A sends to B | 5 USDr | Test, amount changed only |
+| T3 | A sends to B | 5 USDr (3, see amendment 1) | Test, amount changed only |
 | T4 | A sends to C | 1 USDr | Test, recipient changed only |
 | T5 | A sends to B | 1 USDr | Test, repeat of T1 |
 | T6 | A unshields to its own address | 1 USDr | Control, address and amount are public by design |
@@ -70,4 +70,16 @@ The relayer, the per deployment auditor who can read every payment by design, ti
 
 ## Amendments
 
-None yet.
+### Amendment 1, 19 Nov 2026, before T0
+
+Account A was created and funded. The faucet turned out to give 5 USDr and 50 RLS per claim, with a 3 hour wait between claims, so the planned amounts did not fit.
+
+- T0 shields 5 USDr, not 10.
+- T3 sends 3 USDr, not 5. The amount still differs from T1 and T2, which is what the test needs.
+- The rest of A's USDr comes from the shielded faucet (5 USDr straight into the shielded balance) once the wait is over. That claim is saved but is not a trial.
+- Gas. A shields part of its public RLS to pay gas for private actions. That shield is a setup step called S1. It is saved but is not a trial.
+- Trials will run across the faucet wait. Times and blocks are in the results.
+- B is @qa-test and C is @notyourbunnyy.
+- The spend and view public keys used as search values are read from each account's public registration event with `footprint.py keys`. Registration is public by design (the app says so), so those keys showing up in the registration is expected. The question is whether they show up in a payment.
+- The view key is 1184 bytes, so besides the full key the scanner also searches its first and last 32 bytes.
+- The setup transactions (faucet, registration) are listed in `trials.json` under `setup`.
