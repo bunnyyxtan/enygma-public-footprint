@@ -300,7 +300,7 @@ def scan(trials, needles, raw_dir, out_dir):
 
 # ---------------------------------------------------------------- manifest
 
-MANIFEST_GLOBS = ["PREREGISTRATION.md", "trials.json", "needles.json", "raw/*.json", "results/*.json", "scripts/*.py", "tests/*.py"]
+MANIFEST_GLOBS = ["PREREGISTRATION.md", "trials.json", "needles.json", "raw/*.json", "results/*.json", "scripts/*.py", "tests/*.py", "media/screens/*.jpg"]
 
 
 def write_manifest():
